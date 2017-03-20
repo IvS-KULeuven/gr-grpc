@@ -19,16 +19,23 @@
  */
 
 #ifdef HAVE_CONFIG_H
-#include "config.h"
+//#include "config.h"
 #endif
 
-#include "sink_impl.h"
+#include <iostream>
+#include <memory>
+#include <string>
+
+
 #include <grpc/grpc.h>
 #include <grpc++/server_builder.h>
 #include <grpc++/server_context.h>
+
 #include "data_streamer.server.h"
 #include <boost/thread/thread.hpp>
 #include <gnuradio/io_signature.h>
+
+#include "sink_impl.h"
 
 using grpc::Server;
 using grpc::ServerBuilder;
@@ -37,10 +44,10 @@ using grpc::ServerContext;
 namespace gr {
   namespace grpc_blocks {
       
-    void run_server(boost::shared_ptr<Server> server){
+    void sink_impl::run_server(){
         // Wait for the server to shutdown. Note that some other thread must be
         // responsible for shutting down the server for this call to ever return.
-        server->Wait();
+        server_->Wait();
     }
 
     sink::sptr
@@ -68,9 +75,9 @@ namespace gr {
         // clients. In this case it corresponds to an *synchronous* service.
         builder.RegisterService(&service);
         // Finally assemble the server.
-        server = boost::shared_ptr<Server>(builder.BuildAndStart());
+        server_ = builder.BuildAndStart();
         std::cout << "Server listening on " << server_address << std::endl;
-        server_thread = new boost::thread(run_server, server);
+        server_thread = new boost::thread(boost::bind(&sink_impl::run_server, this));
     }
 
     /*
@@ -78,7 +85,7 @@ namespace gr {
      */
     sink_impl::~sink_impl()
     {
-        server->Shutdown();
+        server_->Shutdown();
         delete server_thread;
     }
 

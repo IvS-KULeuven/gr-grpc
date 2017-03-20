@@ -37,7 +37,8 @@ namespace gr {
     {
      private:
       boost::thread* server_thread;
-      boost::shared_ptr<Server>  server;
+      std::unique_ptr<Server> server_;
+      void run_server();
      
     public:
       ServerWriter<Reply>* server_writer;
