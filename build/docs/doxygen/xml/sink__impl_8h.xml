@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="sink__impl_8h" kind="file" language="C++">
+    <compoundname>sink_impl.h</compoundname>
+    <includes refid="sink_8h" local="no">grpc_blocks/sink.h</includes>
+    <includes local="no">boost/thread/thread.hpp</includes>
+    <includes local="no">grpc++/server.h</includes>
+    <includes refid="data__streamer_8grpc_8pb_8h" local="yes">data_streamer.grpc.pb.h</includes>
+    <includes refid="data__streamer_8pb_8h" local="yes">data_streamer.pb.h</includes>
+    <includedby refid="data__streamer_8server_8h" local="yes">data_streamer.server.h</includedby>
+    <incdepgraph>
+      <node id="111">
+        <label>grpc++/impl/codegen/proto_utils.h</label>
+      </node>
+      <node id="114">
+        <label>grpc++/impl/codegen/status.h</label>
+      </node>
+      <node id="116">
+        <label>grpc++/impl/codegen/sync_stream.h</label>
+      </node>
+      <node id="91">
+        <label>grpc_blocks/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="93">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="98">
+        <label>string</label>
+      </node>
+      <node id="100">
+        <label>google/protobuf/io/coded_stream.h</label>
+      </node>
+      <node id="110">
+        <label>grpc++/impl/codegen/async_unary_call.h</label>
+      </node>
+      <node id="92">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="102">
+        <label>google/protobuf/arenastring.h</label>
+      </node>
+      <node id="103">
+        <label>google/protobuf/generated_message_util.h</label>
+      </node>
+      <node id="109">
+        <label>grpc++/impl/codegen/async_stream.h</label>
+      </node>
+      <node id="104">
+        <label>google/protobuf/metadata.h</label>
+      </node>
+      <node id="99">
+        <label>google/protobuf/stubs/common.h</label>
+      </node>
+      <node id="97">
+        <label>data_streamer.pb.h</label>
+        <link refid="data__streamer_8pb_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>google/protobuf/arena.h</label>
+      </node>
+      <node id="96">
+        <label>data_streamer.grpc.pb.h</label>
+        <link refid="data__streamer_8grpc_8pb_8h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>grpc++/impl/codegen/stub_options.h</label>
+      </node>
+      <node id="107">
+        <label>google/protobuf/extension_set.h</label>
+      </node>
+      <node id="90">
+        <label>grpc_blocks/sink.h</label>
+        <link refid="sink_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>grpc++/server.h</label>
+      </node>
+      <node id="106">
+        <label>google/protobuf/repeated_field.h</label>
+      </node>
+      <node id="113">
+        <label>grpc++/impl/codegen/service_type.h</label>
+      </node>
+      <node id="108">
+        <label>google/protobuf/unknown_field_set.h</label>
+      </node>
+      <node id="89">
+        <label>sink_impl.h</label>
+        <link refid="sink__impl_8h"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>google/protobuf/message.h</label>
+      </node>
+      <node id="112">
+        <label>grpc++/impl/codegen/rpc_method.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="118">
+        <label>data_streamer.server.h</label>
+        <link refid="data__streamer_8server_8h"/>
+      </node>
+      <node id="117">
+        <label>sink_impl.h</label>
+        <link refid="sink__impl_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1grpc__blocks_1_1sink__impl" prot="public">gr::grpc_blocks::sink_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1grpc__blocks">gr::grpc_blocks</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/sink_impl.h"/>
+  </compounddef>
+</doxygen>

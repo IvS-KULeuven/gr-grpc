@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classblocks_1_1WorkBlock" kind="class" language="C++" prot="public">
+    <compoundname>blocks::WorkBlock</compoundname>
+    <basecompoundref prot="private" virt="non-virtual">top_block</basecompoundref>
+    <includes refid="work__block_8h" local="no">work_block.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classblocks_1_1WorkBlock_1a2da31a1afa8b2c616745fdf409fad693" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float blocks::WorkBlock::d_cf</definition>
+        <argsstring></argsstring>
+        <name>d_cf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" line="18" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classblocks_1_1WorkBlock_1a13e8734a217bb4e819e1f15fdfcc9c3c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float blocks::WorkBlock::d_rf_gain</definition>
+        <argsstring></argsstring>
+        <name>d_rf_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" line="19" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classblocks_1_1WorkBlock_1a94e3095b492dfdd4c100c6ee54133a22" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int blocks::WorkBlock::d_variable_sample_rate</definition>
+        <argsstring></argsstring>
+        <name>d_variable_sample_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" line="20" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classblocks_1_1WorkBlock_1a99af98d36908a14cc5afe3b7dbc85671" prot="public" static="no" mutable="no">
+        <type>osmosdr::source::sptr</type>
+        <definition>osmosdr::source::sptr blocks::WorkBlock::d_source</definition>
+        <argsstring></argsstring>
+        <name>d_source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" line="21" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classblocks_1_1WorkBlock_1ae8a7ab60446f50a021f57c89527fdc92" prot="public" static="no" mutable="no">
+        <type>gr::filter::fir_filter_ccf</type>
+        <definition>gr::filter::fir_filter_ccf blocks::WorkBlock::d_low_pass_filter</definition>
+        <argsstring></argsstring>
+        <name>d_low_pass_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" line="22" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classblocks_1_1WorkBlock_1ad0dbddc7f169ad3ae361cc970ab18ae2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>blocks::WorkBlock::WorkBlock</definition>
+        <argsstring>(float CF=91.7, float RF_Gain=13, int variable_sample_rate_0=2000000)</argsstring>
+        <name>WorkBlock</name>
+        <param>
+          <type>float</type>
+          <declname>CF</declname>
+          <defval>91.7</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>RF_Gain</declname>
+          <defval>13</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>variable_sample_rate_0</declname>
+          <defval>2000000</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" line="14" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" bodystart="14" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="48">
+        <label>gr::top_block</label>
+      </node>
+      <node id="47">
+        <label>blocks::WorkBlock</label>
+        <link refid="classblocks_1_1WorkBlock"/>
+        <childnode refid="48" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="50">
+        <label>gr::top_block</label>
+      </node>
+      <node id="49">
+        <label>blocks::WorkBlock</label>
+        <link refid="classblocks_1_1WorkBlock"/>
+        <childnode refid="50" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" line="12" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/work_block.h" bodystart="12" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classblocks_1_1WorkBlock_1a2da31a1afa8b2c616745fdf409fad693" prot="public" virt="non-virtual"><scope>blocks::WorkBlock</scope><name>d_cf</name></member>
+      <member refid="classblocks_1_1WorkBlock_1ae8a7ab60446f50a021f57c89527fdc92" prot="public" virt="non-virtual"><scope>blocks::WorkBlock</scope><name>d_low_pass_filter</name></member>
+      <member refid="classblocks_1_1WorkBlock_1a13e8734a217bb4e819e1f15fdfcc9c3c" prot="public" virt="non-virtual"><scope>blocks::WorkBlock</scope><name>d_rf_gain</name></member>
+      <member refid="classblocks_1_1WorkBlock_1a99af98d36908a14cc5afe3b7dbc85671" prot="public" virt="non-virtual"><scope>blocks::WorkBlock</scope><name>d_source</name></member>
+      <member refid="classblocks_1_1WorkBlock_1a94e3095b492dfdd4c100c6ee54133a22" prot="public" virt="non-virtual"><scope>blocks::WorkBlock</scope><name>d_variable_sample_rate</name></member>
+      <member refid="classblocks_1_1WorkBlock_1ad0dbddc7f169ad3ae361cc970ab18ae2" prot="public" virt="non-virtual"><scope>blocks::WorkBlock</scope><name>WorkBlock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

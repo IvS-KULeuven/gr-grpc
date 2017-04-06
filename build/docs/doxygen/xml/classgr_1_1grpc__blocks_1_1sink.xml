@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1grpc__blocks_1_1sink" kind="class" language="C++" prot="public">
+    <compoundname>gr::grpc_blocks::sink</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1grpc__blocks_1_1sink__impl" prot="public" virt="non-virtual">gr::grpc_blocks::sink_impl</derivedcompoundref>
+    <includes refid="sink_8h" local="no">sink.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1grpc__blocks_1_1sink_1a14e35f5d63c945ed7e2225d8d43d49ab" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1grpc__blocks_1_1sink" kindref="compound">sink</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;sink&gt; gr::grpc_blocks::sink::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/include/grpc_blocks/sink.h" line="39" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/include/grpc_blocks/sink.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1grpc__blocks_1_1sink_1a62dd7f2efed31ca9d31220c9fe2e07dc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1grpc__blocks_1_1sink_1a14e35f5d63c945ed7e2225d8d43d49ab" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::grpc_blocks::sink::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1grpc__blocks_1_1sink" kindref="compound">grpc_blocks::sink</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1grpc__blocks_1_1sink" kindref="compound">grpc_blocks::sink</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1grpc__blocks_1_1sink_1a62dd7f2efed31ca9d31220c9fe2e07dc" kindref="member">grpc_blocks::sink::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/include/grpc_blocks/sink.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="24">
+        <label>gr::grpc_blocks::sink_impl</label>
+        <link refid="classgr_1_1grpc__blocks_1_1sink__impl"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gr::grpc_blocks::sink</label>
+        <link refid="classgr_1_1grpc__blocks_1_1sink"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="26">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="25">
+        <label>gr::grpc_blocks::sink</label>
+        <link refid="classgr_1_1grpc__blocks_1_1sink"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/include/grpc_blocks/sink.h" line="37" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/include/grpc_blocks/sink.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1grpc__blocks_1_1sink_1a62dd7f2efed31ca9d31220c9fe2e07dc" prot="public" virt="non-virtual"><scope>gr::grpc_blocks::sink</scope><name>make</name></member>
+      <member refid="classgr_1_1grpc__blocks_1_1sink_1a14e35f5d63c945ed7e2225d8d43d49ab" prot="public" virt="non-virtual"><scope>gr::grpc_blocks::sink</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

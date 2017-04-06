@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData" kind="class" language="C++" prot="public">
+    <compoundname>datastreamer::GRPC_FINAL::WithGenericMethod_RequestData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseClass</basecompoundref>
+    <includes refid="data__streamer_8grpc_8pb_8h" local="no">data_streamer.grpc.pb.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class BaseClass</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1ac456158bb6d21c2cee8a26cd186febc9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::GRPC_FINAL::WithGenericMethod_RequestData&lt; BaseClass &gt;::BaseClassMustBeDerivedFromService</definition>
+        <argsstring>(const Service *service)</argsstring>
+        <name>BaseClassMustBeDerivedFromService</name>
+        <param>
+          <type>const <ref refid="classdatastreamer_1_1GRPC__FINAL_1_1Service" kindref="compound">Service</ref> *</type>
+          <declname>service</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="91" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1a2a518699569de03704116ab95ca61ab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>datastreamer::GRPC_FINAL::WithGenericMethod_RequestData&lt; BaseClass &gt;::WithGenericMethod_RequestData</definition>
+        <argsstring>()</argsstring>
+        <name>WithGenericMethod_RequestData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="93" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1adadbc57029273f565f5a8e8be61de5cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>datastreamer::GRPC_FINAL::WithGenericMethod_RequestData&lt; BaseClass &gt;::~WithGenericMethod_RequestData</definition>
+        <argsstring>() GRPC_OVERRIDE</argsstring>
+        <name>~WithGenericMethod_RequestData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="96" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1a6b3ce56ae30ba9970e8801966f2a44ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>::grpc::Status</type>
+        <definition>::grpc::Status datastreamer::GRPC_FINAL::WithGenericMethod_RequestData&lt; BaseClass &gt;::RequestData</definition>
+        <argsstring>(::grpc::ServerContext *context, const ::datastreamer::Request *request, ::grpc::ServerWriter&lt; ::datastreamer::Reply &gt; *writer) GRPC_FINAL GRPC_OVERRIDE</argsstring>
+        <name>RequestData</name>
+        <param>
+          <type>::grpc::ServerContext *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const ::<ref refid="classdatastreamer_1_1Request" kindref="compound">datastreamer::Request</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>::grpc::ServerWriter&lt; ::<ref refid="classdatastreamer_1_1Reply" kindref="compound">datastreamer::Reply</ref> &gt; *</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="100" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="44">
+        <label>BaseClass</label>
+      </node>
+      <node id="43">
+        <label>datastreamer::GRPC_FINAL::WithGenericMethod_RequestData&lt; BaseClass &gt;</label>
+        <link refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="46">
+        <label>BaseClass</label>
+      </node>
+      <node id="45">
+        <label>datastreamer::GRPC_FINAL::WithGenericMethod_RequestData&lt; BaseClass &gt;</label>
+        <link refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="89" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="89" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1ac456158bb6d21c2cee8a26cd186febc9" prot="private" virt="non-virtual"><scope>datastreamer::GRPC_FINAL::WithGenericMethod_RequestData</scope><name>BaseClassMustBeDerivedFromService</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1a6b3ce56ae30ba9970e8801966f2a44ef" prot="public" virt="non-virtual"><scope>datastreamer::GRPC_FINAL::WithGenericMethod_RequestData</scope><name>RequestData</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1a2a518699569de03704116ab95ca61ab3" prot="public" virt="non-virtual"><scope>datastreamer::GRPC_FINAL::WithGenericMethod_RequestData</scope><name>WithGenericMethod_RequestData</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1adadbc57029273f565f5a8e8be61de5cf" prot="public" virt="non-virtual"><scope>datastreamer::GRPC_FINAL::WithGenericMethod_RequestData</scope><name>~WithGenericMethod_RequestData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

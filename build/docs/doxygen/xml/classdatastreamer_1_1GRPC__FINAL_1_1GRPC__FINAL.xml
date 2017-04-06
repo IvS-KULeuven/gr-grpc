@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL" kind="class" language="C++" prot="public">
+    <compoundname>datastreamer::GRPC_FINAL::GRPC_FINAL</compoundname>
+    <basecompoundref refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface" prot="public" virt="non-virtual">datastreamer::GRPC_FINAL::StubInterface</basecompoundref>
+    <includes refid="data__streamer_8grpc_8pb_8h" local="no">data_streamer.grpc.pb.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1a80a011711cae658fbdda7bac44690ea3" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; ::grpc::ChannelInterface &gt;</type>
+        <definition>std::shared_ptr&lt; ::grpc::ChannelInterface&gt; datastreamer::GRPC_FINAL::GRPC_FINAL::channel_</definition>
+        <argsstring></argsstring>
+        <name>channel_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="54" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1ac1540556b3271c97f95be2aaff81a5ca" prot="private" static="no" mutable="no">
+        <type>const ::grpc::RpcMethod</type>
+        <definition>const ::grpc::RpcMethod datastreamer::GRPC_FINAL::GRPC_FINAL::rpcmethod_RequestData_</definition>
+        <argsstring></argsstring>
+        <name>rpcmethod_RequestData_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="57" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1a2455b29a863c5a9e2aa4a32539f64aa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>datastreamer::GRPC_FINAL::GRPC_FINAL::Stub</definition>
+        <argsstring>(const std::shared_ptr&lt; ::grpc::ChannelInterface &gt; &amp;channel)</argsstring>
+        <name>Stub</name>
+        <param>
+          <type>const std::shared_ptr&lt; ::grpc::ChannelInterface &gt; &amp;</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1ac40546f60a4007c1372e2ffca3d4bb97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::unique_ptr&lt; ::grpc::ClientReader&lt; ::<ref refid="classdatastreamer_1_1Reply" kindref="compound">datastreamer::Reply</ref> &gt; &gt;</type>
+        <definition>std::unique_ptr&lt; ::grpc::ClientReader&lt; ::datastreamer::Reply&gt; &gt; datastreamer::GRPC_FINAL::GRPC_FINAL::RequestData</definition>
+        <argsstring>(::grpc::ClientContext *context, const ::datastreamer::Request &amp;request)</argsstring>
+        <name>RequestData</name>
+        <param>
+          <type>::grpc::ClientContext *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const ::<ref refid="classdatastreamer_1_1Request" kindref="compound">datastreamer::Request</ref> &amp;</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="46" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1abe001bf907dd1c5008678eec11fd982a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::unique_ptr&lt; ::grpc::ClientAsyncReader&lt; ::<ref refid="classdatastreamer_1_1Reply" kindref="compound">datastreamer::Reply</ref> &gt; &gt;</type>
+        <definition>std::unique_ptr&lt; ::grpc::ClientAsyncReader&lt; ::datastreamer::Reply&gt; &gt; datastreamer::GRPC_FINAL::GRPC_FINAL::AsyncRequestData</definition>
+        <argsstring>(::grpc::ClientContext *context, const ::datastreamer::Request &amp;request, ::grpc::CompletionQueue *cq, void *tag)</argsstring>
+        <name>AsyncRequestData</name>
+        <param>
+          <type>::grpc::ClientContext *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const ::<ref refid="classdatastreamer_1_1Request" kindref="compound">datastreamer::Request</ref> &amp;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>::grpc::CompletionQueue *</type>
+          <declname>cq</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="49" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="49" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1a66cc57d3c1c9d6a30871b136dbdd224d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>::grpc::ClientReader&lt; ::<ref refid="classdatastreamer_1_1Reply" kindref="compound">datastreamer::Reply</ref> &gt; *</type>
+        <definition>::grpc::ClientReader&lt; ::datastreamer::Reply&gt;* datastreamer::GRPC_FINAL::GRPC_FINAL::RequestDataRaw</definition>
+        <argsstring>(::grpc::ClientContext *context, const ::datastreamer::Request &amp;request) GRPC_OVERRIDE</argsstring>
+        <name>RequestDataRaw</name>
+        <reimplements refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface_1a15f431aec9dd9b761f828de51d959489">RequestDataRaw</reimplements>
+        <param>
+          <type>::grpc::ClientContext *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const ::<ref refid="classdatastreamer_1_1Request" kindref="compound">datastreamer::Request</ref> &amp;</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1acf30abc93a8208e5d3dc00f02605c8c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>::grpc::ClientAsyncReader&lt; ::<ref refid="classdatastreamer_1_1Reply" kindref="compound">datastreamer::Reply</ref> &gt; *</type>
+        <definition>::grpc::ClientAsyncReader&lt; ::datastreamer::Reply&gt;* datastreamer::GRPC_FINAL::GRPC_FINAL::AsyncRequestDataRaw</definition>
+        <argsstring>(::grpc::ClientContext *context, const ::datastreamer::Request &amp;request, ::grpc::CompletionQueue *cq, void *tag) GRPC_OVERRIDE</argsstring>
+        <name>AsyncRequestDataRaw</name>
+        <reimplements refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface_1a831adfb2ae2475b443fe15f1f4f29e3a">AsyncRequestDataRaw</reimplements>
+        <param>
+          <type>::grpc::ClientContext *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const ::<ref refid="classdatastreamer_1_1Request" kindref="compound">datastreamer::Request</ref> &amp;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>::grpc::CompletionQueue *</type>
+          <declname>cq</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>datastreamer::GRPC_FINAL::StubInterface</label>
+        <link refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface"/>
+      </node>
+      <node id="6">
+        <label>datastreamer::GRPC_FINAL::GRPC_FINAL</label>
+        <link refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>datastreamer::GRPC_FINAL::StubInterface</label>
+        <link refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface"/>
+      </node>
+      <node id="8">
+        <label>datastreamer::GRPC_FINAL::GRPC_FINAL</label>
+        <link refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="43" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="43" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1abe001bf907dd1c5008678eec11fd982a" prot="public" virt="non-virtual"><scope>datastreamer::GRPC_FINAL::GRPC_FINAL</scope><name>AsyncRequestData</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1acf30abc93a8208e5d3dc00f02605c8c3" prot="private" virt="virtual"><scope>datastreamer::GRPC_FINAL::GRPC_FINAL</scope><name>AsyncRequestDataRaw</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1a80a011711cae658fbdda7bac44690ea3" prot="private" virt="non-virtual"><scope>datastreamer::GRPC_FINAL::GRPC_FINAL</scope><name>channel_</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1ac40546f60a4007c1372e2ffca3d4bb97" prot="public" virt="non-virtual"><scope>datastreamer::GRPC_FINAL::GRPC_FINAL</scope><name>RequestData</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1a66cc57d3c1c9d6a30871b136dbdd224d" prot="private" virt="virtual"><scope>datastreamer::GRPC_FINAL::GRPC_FINAL</scope><name>RequestDataRaw</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1ac1540556b3271c97f95be2aaff81a5ca" prot="private" virt="non-virtual"><scope>datastreamer::GRPC_FINAL::GRPC_FINAL</scope><name>rpcmethod_RequestData_</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1a2455b29a863c5a9e2aa4a32539f64aa5" prot="public" virt="non-virtual"><scope>datastreamer::GRPC_FINAL::GRPC_FINAL</scope><name>Stub</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface_1af599ac984730b2e84e6f57299cae0508" prot="public" virt="virtual"><scope>datastreamer::GRPC_FINAL::GRPC_FINAL</scope><name>~StubInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

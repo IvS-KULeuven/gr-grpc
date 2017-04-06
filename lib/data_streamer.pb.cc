@@ -16,6 +16,8 @@
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
+
+namespace datastreamer {
 class RequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Request> {
 } _Request_default_instance_;
 class ReplyDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Reply> {
@@ -97,12 +99,13 @@ void InitDefaults() {
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] = {
-      "\n\023data_streamer.proto\"\t\n\007Request\"\030\n\005Repl"
-      "y\022\017\n\007message\030\001 \001(\00223\n\014DataStreamer\022#\n\013Re"
-      "questData\022\010.Request\032\006.Reply\"\0000\001b\006proto3"
+      "\n\023data_streamer.proto\022\014datastreamer\"\t\n\007R"
+      "equest\"\030\n\005Reply\022\017\n\007message\030\001 \001(\0022M\n\014Data"
+      "Streamer\022=\n\013RequestData\022\025.datastreamer.R"
+      "equest\032\023.datastreamer.Reply\"\0000\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 119);
+      descriptor, 159);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "data_streamer.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
@@ -133,14 +136,14 @@ Request::Request()
     protobuf_data_5fstreamer_2eproto::InitDefaults();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Request)
+  // @@protoc_insertion_point(constructor:datastreamer.Request)
 }
 Request::Request(const Request& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:Request)
+  // @@protoc_insertion_point(copy_constructor:datastreamer.Request)
 }
 
 void Request::SharedCtor() {
@@ -148,7 +151,7 @@ void Request::SharedCtor() {
 }
 
 Request::~Request() {
-  // @@protoc_insertion_point(destructor:Request)
+  // @@protoc_insertion_point(destructor:datastreamer.Request)
   SharedDtor();
 }
 
@@ -179,14 +182,14 @@ Request* Request::New(::google::protobuf::Arena* arena) const {
 }
 
 void Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:Request)
+// @@protoc_insertion_point(message_clear_start:datastreamer.Request)
 }
 
 bool Request::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:Request)
+  // @@protoc_insertion_point(parse_start:datastreamer.Request)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -200,30 +203,30 @@ bool Request::MergePartialFromCodedStream(
     DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
   }
 success:
-  // @@protoc_insertion_point(parse_success:Request)
+  // @@protoc_insertion_point(parse_success:datastreamer.Request)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:Request)
+  // @@protoc_insertion_point(parse_failure:datastreamer.Request)
   return false;
 #undef DO_
 }
 
 void Request::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Request)
-  // @@protoc_insertion_point(serialize_end:Request)
+  // @@protoc_insertion_point(serialize_start:datastreamer.Request)
+  // @@protoc_insertion_point(serialize_end:datastreamer.Request)
 }
 
 ::google::protobuf::uint8* Request::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic;  // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:Request)
-  // @@protoc_insertion_point(serialize_to_array_end:Request)
+  // @@protoc_insertion_point(serialize_to_array_start:datastreamer.Request)
+  // @@protoc_insertion_point(serialize_to_array_end:datastreamer.Request)
   return target;
 }
 
 size_t Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Request)
+// @@protoc_insertion_point(message_byte_size_start:datastreamer.Request)
   size_t total_size = 0;
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -234,35 +237,35 @@ size_t Request::ByteSizeLong() const {
 }
 
 void Request::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Request)
+// @@protoc_insertion_point(generalized_merge_from_start:datastreamer.Request)
   GOOGLE_DCHECK_NE(&from, this);
   const Request* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Request>(
           &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Request)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:datastreamer.Request)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Request)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:datastreamer.Request)
     MergeFrom(*source);
   }
 }
 
 void Request::MergeFrom(const Request& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Request)
+// @@protoc_insertion_point(class_specific_merge_from_start:datastreamer.Request)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
 }
 
 void Request::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Request)
+// @@protoc_insertion_point(generalized_copy_from_start:datastreamer.Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Request::CopyFrom(const Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:datastreamer.Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -302,7 +305,7 @@ Reply::Reply()
     protobuf_data_5fstreamer_2eproto::InitDefaults();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Reply)
+  // @@protoc_insertion_point(constructor:datastreamer.Reply)
 }
 Reply::Reply(const Reply& from)
   : ::google::protobuf::Message(),
@@ -310,7 +313,7 @@ Reply::Reply(const Reply& from)
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   message_ = from.message_;
-  // @@protoc_insertion_point(copy_constructor:Reply)
+  // @@protoc_insertion_point(copy_constructor:datastreamer.Reply)
 }
 
 void Reply::SharedCtor() {
@@ -319,7 +322,7 @@ void Reply::SharedCtor() {
 }
 
 Reply::~Reply() {
-  // @@protoc_insertion_point(destructor:Reply)
+  // @@protoc_insertion_point(destructor:datastreamer.Reply)
   SharedDtor();
 }
 
@@ -350,7 +353,7 @@ Reply* Reply::New(::google::protobuf::Arena* arena) const {
 }
 
 void Reply::Clear() {
-// @@protoc_insertion_point(message_clear_start:Reply)
+// @@protoc_insertion_point(message_clear_start:datastreamer.Reply)
   message_ = 0;
 }
 
@@ -358,7 +361,7 @@ bool Reply::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:Reply)
+  // @@protoc_insertion_point(parse_start:datastreamer.Reply)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -390,40 +393,40 @@ bool Reply::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:Reply)
+  // @@protoc_insertion_point(parse_success:datastreamer.Reply)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:Reply)
+  // @@protoc_insertion_point(parse_failure:datastreamer.Reply)
   return false;
 #undef DO_
 }
 
 void Reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Reply)
+  // @@protoc_insertion_point(serialize_start:datastreamer.Reply)
   // float message = 1;
   if (this->message() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->message(), output);
   }
 
-  // @@protoc_insertion_point(serialize_end:Reply)
+  // @@protoc_insertion_point(serialize_end:datastreamer.Reply)
 }
 
 ::google::protobuf::uint8* Reply::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic;  // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:Reply)
+  // @@protoc_insertion_point(serialize_to_array_start:datastreamer.Reply)
   // float message = 1;
   if (this->message() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->message(), target);
   }
 
-  // @@protoc_insertion_point(serialize_to_array_end:Reply)
+  // @@protoc_insertion_point(serialize_to_array_end:datastreamer.Reply)
   return target;
 }
 
 size_t Reply::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Reply)
+// @@protoc_insertion_point(message_byte_size_start:datastreamer.Reply)
   size_t total_size = 0;
 
   // float message = 1;
@@ -439,22 +442,22 @@ size_t Reply::ByteSizeLong() const {
 }
 
 void Reply::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Reply)
+// @@protoc_insertion_point(generalized_merge_from_start:datastreamer.Reply)
   GOOGLE_DCHECK_NE(&from, this);
   const Reply* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Reply>(
           &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Reply)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:datastreamer.Reply)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Reply)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:datastreamer.Reply)
     MergeFrom(*source);
   }
 }
 
 void Reply::MergeFrom(const Reply& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Reply)
+// @@protoc_insertion_point(class_specific_merge_from_start:datastreamer.Reply)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.message() != 0) {
@@ -463,14 +466,14 @@ void Reply::MergeFrom(const Reply& from) {
 }
 
 void Reply::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Reply)
+// @@protoc_insertion_point(generalized_copy_from_start:datastreamer.Reply)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Reply::CopyFrom(const Reply& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Reply)
+// @@protoc_insertion_point(class_specific_copy_from_start:datastreamer.Reply)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -502,17 +505,19 @@ void Reply::clear_message() {
   message_ = 0;
 }
 float Reply::message() const {
-  // @@protoc_insertion_point(field_get:Reply.message)
+  // @@protoc_insertion_point(field_get:datastreamer.Reply.message)
   return message_;
 }
 void Reply::set_message(float value) {
   
   message_ = value;
-  // @@protoc_insertion_point(field_set:Reply.message)
+  // @@protoc_insertion_point(field_set:datastreamer.Reply.message)
 }
 
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
+
+}  // namespace datastreamer
 
 // @@protoc_insertion_point(global_scope)

@@ -34,40 +34,29 @@
 #include "data_streamer.server.h"
 #include <boost/thread/thread.hpp>
 #include <gnuradio/io_signature.h>
+#include "data_streamer.grpc.pb.h"
 
 #include "sink_impl.h"
 
 using grpc::Server;
 using grpc::ServerBuilder;
 using grpc::ServerContext;
+using grpc::Status;
+
+using datastreamer::Request;
+using datastreamer::Reply;
+using datastreamer::DataStreamer;
 
 namespace gr {
   namespace grpc_blocks {
       
     void sink_impl::run_server(){
+       std::string server_address("0.0.0.0:50051");
+
+        DataStreamerImpl service(this);
+
         // Wait for the server to shutdown. Note that some other thread must be
         // responsible for shutting down the server for this call to ever return.
-        server_->Wait();
-    }
-
-    sink::sptr
-    sink::make()
-    {
-      return gnuradio::get_initial_sptr
-        (new sink_impl());
-    }
-
-    /*
-     * The private constructor
-     */
-    sink_impl::sink_impl()
-      : gr::sync_block("sink",
-              gr::io_signature::make(0, 1, sizeof(float)),
-              gr::io_signature::make(0, 0, 0))
-    {
-        std::string server_address("0.0.0.0:50051");
-        DataStreamerImpl service = DataStreamerImpl(this);
-
         ServerBuilder builder;
         // Listen on the given address without any authentication mechanism.
         builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
@@ -77,7 +66,27 @@ namespace gr {
         // Finally assemble the server.
         server_ = builder.BuildAndStart();
         std::cout << "Server listening on " << server_address << std::endl;
+        server_->Wait();
+    }
+
+    sink::sptr
+    sink::make()
+    {
+     return gnuradio::get_initial_sptr
+       (new sink_impl());
+    }
+
+    /*
+     * The private constructor
+     */
+    sink_impl::sink_impl()
+      : gr::sync_block("sink",
+              gr::io_signature::make(1, 1, sizeof(float)),
+              gr::io_signature::make(0, 0, 0))
+    {
+        std::cout << "Server construct 1" << std::endl;
         server_thread = new boost::thread(boost::bind(&sink_impl::run_server, this));
+        std::cout << "Server construct 2" << std::endl;
     }
 
     /*
@@ -98,10 +107,12 @@ namespace gr {
 
       // Do <+signal processing+>
 
-        if (server_writer){
-            const float *in = (const float *) input_items[0];
-            for (int i = 0; i < noutput_items; i++){
+
+        const float *in = (const float *) input_items[0];
+        for (int i = 0; i < noutput_items; i++){
+            if (server_writer != nullptr){
                 Reply reply;
+                std::cout << "Writing to GRPC" << std::endl;
                 reply.set_message(in[i]);
                 server_writer->Write(reply);
             }

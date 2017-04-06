@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1grpc__blocks_1_1DataStreamerImpl" kind="class"><name>gr::grpc_blocks::DataStreamerImpl</name>
+    <member refid="classgr_1_1grpc__blocks_1_1DataStreamerImpl_1a251d337436ad94b40b83e3e016c13a88" kind="variable"><name>v_sink</name></member>
+    <member refid="classgr_1_1grpc__blocks_1_1DataStreamerImpl_1ad142da70913f341705a380ec60730fbd" kind="function"><name>DataStreamerImpl</name></member>
+    <member refid="classgr_1_1grpc__blocks_1_1DataStreamerImpl_1a3abb50954065b5919c8bfe5603264d6d" kind="function"><name>RequestData</name></member>
+  </compound>
+  <compound refid="classdatastreamer_1_1GRPC__FINAL" kind="class"><name>datastreamer::GRPC_FINAL</name>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1a4c9491b6baa9b19c9134a92a74c6c810" kind="typedef"><name>AsyncService</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1a7dae76922d5f46ed390406a16876b898" kind="function"><name>NewStub</name></member>
+  </compound>
+  <compound refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL" kind="class"><name>datastreamer::GRPC_FINAL::GRPC_FINAL</name>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1a80a011711cae658fbdda7bac44690ea3" kind="variable"><name>channel_</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1ac1540556b3271c97f95be2aaff81a5ca" kind="variable"><name>rpcmethod_RequestData_</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1a2455b29a863c5a9e2aa4a32539f64aa5" kind="function"><name>Stub</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1ac40546f60a4007c1372e2ffca3d4bb97" kind="function"><name>RequestData</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1abe001bf907dd1c5008678eec11fd982a" kind="function"><name>AsyncRequestData</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1a66cc57d3c1c9d6a30871b136dbdd224d" kind="function"><name>RequestDataRaw</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL_1acf30abc93a8208e5d3dc00f02605c8c3" kind="function"><name>AsyncRequestDataRaw</name></member>
+  </compound>
+  <compound refid="classdatastreamer_1_1Reply" kind="class"><name>datastreamer::Reply</name>
+    <member refid="classdatastreamer_1_1Reply_1ad9b15f72fb2da11f3d26c4c5a5c757bf" kind="variable"><name>kMessageFieldNumber</name></member>
+    <member refid="classdatastreamer_1_1Reply_1ab50b7714ce0a9b109277c5ae334f655f" kind="variable"><name>_internal_metadata_</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a24a1803dc6c9bb4e085d0e930cf83b5d" kind="variable"><name>message_</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a94abac2d5b9365aacccf967e32eb7acc" kind="variable"><name>_cached_size_</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a61a0e2139aa17ec92386a2d3642969a5" kind="friend"><name>protobuf_data_5fstreamer_2eproto::TableStruct</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a12657d5cf40278b0e8ea5e04110bef1f" kind="function"><name>Reply</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a05a94841697376f4f8de18182372c9d2" kind="function"><name>~Reply</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a0f4f7ae6998627f1633608c6097c16e7" kind="function"><name>Reply</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a3593aec1ac2149a6b36a979924f5330a" kind="function"><name>operator=</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a0439799ece48607ccdc13e4e2a4405bc" kind="function"><name>Swap</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a5cc48b3c6f31ff1bc4deb96eced029dc" kind="function"><name>New</name></member>
+    <member refid="classdatastreamer_1_1Reply_1aad1c4f0a794367b9f3c07cd0a31dbc25" kind="function"><name>New</name></member>
+    <member refid="classdatastreamer_1_1Reply_1ab3438572c2e47a9b16b93d46f344fd0a" kind="function"><name>CopyFrom</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a020f9f92fdc92f966e443ff20c0473b9" kind="function"><name>MergeFrom</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a3d2169e75d723019236d0057ca76b988" kind="function"><name>CopyFrom</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a30c97ea016b68d01e232a9b61917576e" kind="function"><name>MergeFrom</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a050274829f72d90f9fbc242cb5c74a84" kind="function"><name>Clear</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a4919911da470b7eff53c458ccaef02ea" kind="function"><name>IsInitialized</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a8a7bbc3a01e464324803872af17cffec" kind="function"><name>ByteSizeLong</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a1427e6902311330135039819e8a34b9d" kind="function"><name>MergePartialFromCodedStream</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a23e036772cd5a04f8fe9c7d63494d817" kind="function"><name>SerializeWithCachedSizes</name></member>
+    <member refid="classdatastreamer_1_1Reply_1aa992731103cd5fd70ae7a7752543a482" kind="function"><name>InternalSerializeWithCachedSizesToArray</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a47a6b5578f63868545ff791ef5a5bee8" kind="function"><name>SerializeWithCachedSizesToArray</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a7fab61f6b2b40042a11ed6986f52abe3" kind="function"><name>GetCachedSize</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a76ee66b88f019d9600814094534ec585" kind="function"><name>GetMetadata</name></member>
+    <member refid="classdatastreamer_1_1Reply_1ac6f438f4a338fb88b8ff784afb28b6e8" kind="function"><name>clear_message</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a855bde9c744710736efb4e9efd32dcf2" kind="function"><name>message</name></member>
+    <member refid="classdatastreamer_1_1Reply_1ad0b4c3eed6356be6be9efbb91bd7c31d" kind="function"><name>set_message</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a2293fa3fe96db28139c78f608b8dc796" kind="function"><name>descriptor</name></member>
+    <member refid="classdatastreamer_1_1Reply_1af08ee92724146e57acb5427784fc4d59" kind="function"><name>default_instance</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a06acb9ec8c38d5585684ae4947d83083" kind="function"><name>internal_default_instance</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a44dc26ae128f897c8e560c2807bd228f" kind="function"><name>SharedCtor</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a914d9c47cbf63e2aed7ce5bae03dbdcc" kind="function"><name>SharedDtor</name></member>
+    <member refid="classdatastreamer_1_1Reply_1ae142690571c15ad1a7ae3672e79de460" kind="function"><name>SetCachedSize</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a86a82b274818c6d20c9bdfd70b7d1fce" kind="function"><name>InternalSwap</name></member>
+    <member refid="classdatastreamer_1_1Reply_1ae255ac7118fb23995f07b5397d861eb6" kind="function"><name>GetArenaNoVirtual</name></member>
+    <member refid="classdatastreamer_1_1Reply_1a4004e483ef9c996d0912feaa619be249" kind="function"><name>MaybeArenaPtr</name></member>
+  </compound>
+  <compound refid="classdatastreamer_1_1Request" kind="class"><name>datastreamer::Request</name>
+    <member refid="classdatastreamer_1_1Request_1a5512ca06f72ef1dbc42e607cb6d713ce" kind="variable"><name>_internal_metadata_</name></member>
+    <member refid="classdatastreamer_1_1Request_1acb21e0081f83eff2347254f2c7d6851c" kind="variable"><name>_cached_size_</name></member>
+    <member refid="classdatastreamer_1_1Request_1a61a0e2139aa17ec92386a2d3642969a5" kind="friend"><name>protobuf_data_5fstreamer_2eproto::TableStruct</name></member>
+    <member refid="classdatastreamer_1_1Request_1a171864d6ab867a1584bb6cde91dce028" kind="function"><name>Request</name></member>
+    <member refid="classdatastreamer_1_1Request_1aa7b5c82bd097ed686cbd1b1e4447d27d" kind="function"><name>~Request</name></member>
+    <member refid="classdatastreamer_1_1Request_1af17e49ae3fab1c808d1e9bc7216b3e9b" kind="function"><name>Request</name></member>
+    <member refid="classdatastreamer_1_1Request_1aff2ba541518389d6b0f009a52b91b975" kind="function"><name>operator=</name></member>
+    <member refid="classdatastreamer_1_1Request_1a69840fac4aeaf8b90047d6a017c01dea" kind="function"><name>Swap</name></member>
+    <member refid="classdatastreamer_1_1Request_1a911d65777f547cf49064edfbbc03510c" kind="function"><name>New</name></member>
+    <member refid="classdatastreamer_1_1Request_1a62b09be2d67961f21f37f2fc0ad3658d" kind="function"><name>New</name></member>
+    <member refid="classdatastreamer_1_1Request_1ab4f60d51ea1082624c36b544f3f08763" kind="function"><name>CopyFrom</name></member>
+    <member refid="classdatastreamer_1_1Request_1a16ec3c09fc0e1659ce4c864bf0253508" kind="function"><name>MergeFrom</name></member>
+    <member refid="classdatastreamer_1_1Request_1aeaea23706d22418457b56f61e6b2c112" kind="function"><name>CopyFrom</name></member>
+    <member refid="classdatastreamer_1_1Request_1a061b868eeb54a4937adde93c4d4f477c" kind="function"><name>MergeFrom</name></member>
+    <member refid="classdatastreamer_1_1Request_1a1b2bdd61897232b044ddcd829be5e0ed" kind="function"><name>Clear</name></member>
+    <member refid="classdatastreamer_1_1Request_1acf78b8239591ab89c09d7579cb0b8693" kind="function"><name>IsInitialized</name></member>
+    <member refid="classdatastreamer_1_1Request_1aaed55a49fd5435df3553c89d2caf1ebc" kind="function"><name>ByteSizeLong</name></member>
+    <member refid="classdatastreamer_1_1Request_1ab9237a226ca61542fe76347fa73bc247" kind="function"><name>MergePartialFromCodedStream</name></member>
+    <member refid="classdatastreamer_1_1Request_1a20b9bea88d78f65a967b00f9b6f0af9e" kind="function"><name>SerializeWithCachedSizes</name></member>
+    <member refid="classdatastreamer_1_1Request_1a15b91e51623c97ef3f36c3a9b2b8e0f2" kind="function"><name>InternalSerializeWithCachedSizesToArray</name></member>
+    <member refid="classdatastreamer_1_1Request_1ad2d29bb58feb3fe3fc6b3e25a3e0ced9" kind="function"><name>SerializeWithCachedSizesToArray</name></member>
+    <member refid="classdatastreamer_1_1Request_1ab6008015893ca48cc2c70fa1f1319e57" kind="function"><name>GetCachedSize</name></member>
+    <member refid="classdatastreamer_1_1Request_1aea5f5f2c6f28697dc76d98f0474f0eaf" kind="function"><name>GetMetadata</name></member>
+    <member refid="classdatastreamer_1_1Request_1a8aadc44091130c24fbb9cd8a53e020a3" kind="function"><name>descriptor</name></member>
+    <member refid="classdatastreamer_1_1Request_1aa9e7bfa20bd82fea24947b010e728795" kind="function"><name>default_instance</name></member>
+    <member refid="classdatastreamer_1_1Request_1a9710aec439c5c76aae89f1d51612d919" kind="function"><name>internal_default_instance</name></member>
+    <member refid="classdatastreamer_1_1Request_1aaa284ecda5179a693db2f565a8116d3c" kind="function"><name>SharedCtor</name></member>
+    <member refid="classdatastreamer_1_1Request_1a9e99c4af0304118485e181f9c48b814d" kind="function"><name>SharedDtor</name></member>
+    <member refid="classdatastreamer_1_1Request_1a67d00fec6f6bea168d8a372ed827262d" kind="function"><name>SetCachedSize</name></member>
+    <member refid="classdatastreamer_1_1Request_1ace57fff03670c1ef7fadc4fe3acc7585" kind="function"><name>InternalSwap</name></member>
+    <member refid="classdatastreamer_1_1Request_1a292665360c57da44b2430b48d437d433" kind="function"><name>GetArenaNoVirtual</name></member>
+    <member refid="classdatastreamer_1_1Request_1a66290bc7ebd380310fb4ab90265e4d64" kind="function"><name>MaybeArenaPtr</name></member>
+  </compound>
+  <compound refid="classdatastreamer_1_1GRPC__FINAL_1_1Service" kind="class"><name>datastreamer::GRPC_FINAL::Service</name>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1Service_1a8e6e0ed0bd6d2722d14364dbb14c40cc" kind="function"><name>Service</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1Service_1af4ca37b7f65d80d799021e8917d771b8" kind="function"><name>~Service</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1Service_1a177ef7e3c7e779d7acf54a5201833225" kind="function"><name>RequestData</name></member>
+  </compound>
+  <compound refid="classgr_1_1grpc__blocks_1_1sink" kind="class"><name>gr::grpc_blocks::sink</name>
+    <member refid="classgr_1_1grpc__blocks_1_1sink_1a14e35f5d63c945ed7e2225d8d43d49ab" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1grpc__blocks_1_1sink_1a62dd7f2efed31ca9d31220c9fe2e07dc" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1grpc__blocks_1_1sink__impl" kind="class"><name>gr::grpc_blocks::sink_impl</name>
+    <member refid="classgr_1_1grpc__blocks_1_1sink__impl_1a404a9ff75a345b79be7856727f5366e1" kind="variable"><name>server_thread</name></member>
+    <member refid="classgr_1_1grpc__blocks_1_1sink__impl_1aac21ffd717336058b708c00632db8517" kind="variable"><name>server_</name></member>
+    <member refid="classgr_1_1grpc__blocks_1_1sink__impl_1a52046c7338410c3047629f09f327608a" kind="variable"><name>server_writer</name></member>
+    <member refid="classgr_1_1grpc__blocks_1_1sink__impl_1ae5d611476ecdb8290d4eb30998ea92f4" kind="function"><name>run_server</name></member>
+    <member refid="classgr_1_1grpc__blocks_1_1sink__impl_1af6f26cd84bf8f35d76a6cd0d36e29e47" kind="function"><name>sink_impl</name></member>
+    <member refid="classgr_1_1grpc__blocks_1_1sink__impl_1ab3efac4b9febe96e2436a75b0c1ba21f" kind="function"><name>~sink_impl</name></member>
+    <member refid="classgr_1_1grpc__blocks_1_1sink__impl_1a0771606727a140644a5f8b08756ceed6" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface" kind="class"><name>datastreamer::GRPC_FINAL::StubInterface</name>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface_1af599ac984730b2e84e6f57299cae0508" kind="function"><name>~StubInterface</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface_1a870f8ef8e897f2803d9ce38a5f2f1ecd" kind="function"><name>RequestData</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface_1acf9fa4c676b951fc20b1068f06fc50e9" kind="function"><name>AsyncRequestData</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface_1a15f431aec9dd9b761f828de51d959489" kind="function"><name>RequestDataRaw</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface_1a831adfb2ae2475b443fe15f1f4f29e3a" kind="function"><name>AsyncRequestDataRaw</name></member>
+  </compound>
+  <compound refid="structdatastreamer_1_1protobuf__data__5fstreamer__2eproto_1_1TableStruct" kind="struct"><name>datastreamer::protobuf_data_5fstreamer_2eproto::TableStruct</name>
+    <member refid="structdatastreamer_1_1protobuf__data__5fstreamer__2eproto_1_1TableStruct_1ac4e4178b9ab33e71f97c0feedfd2c455" kind="variable"><name>offsets</name></member>
+    <member refid="structdatastreamer_1_1protobuf__data__5fstreamer__2eproto_1_1TableStruct_1a4846a31fb8a617e5e49c73fb97020b48" kind="function"><name>InitDefaultsImpl</name></member>
+    <member refid="structdatastreamer_1_1protobuf__data__5fstreamer__2eproto_1_1TableStruct_1aac52d82a613b7935e3aecc8c19e6efd5" kind="function"><name>Shutdown</name></member>
+  </compound>
+  <compound refid="classdatastreamer_1_1GRPC__FINAL_1_1WithAsyncMethod__RequestData" kind="class"><name>datastreamer::GRPC_FINAL::WithAsyncMethod_RequestData</name>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithAsyncMethod__RequestData_1ac3b880371dd8ec077615d7eb6e43add8" kind="function"><name>BaseClassMustBeDerivedFromService</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithAsyncMethod__RequestData_1a066aa987fa4a493351267b32deb81ad1" kind="function"><name>WithAsyncMethod_RequestData</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithAsyncMethod__RequestData_1a774a5d10472a3b9a3d6efbfbbe48d02a" kind="function"><name>~WithAsyncMethod_RequestData</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithAsyncMethod__RequestData_1ac4c3351e8a6bed1b23cfa1b845208057" kind="function"><name>RequestData</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithAsyncMethod__RequestData_1af093c589bc3abf57daf7f425faac66a1" kind="function"><name>RequestRequestData</name></member>
+  </compound>
+  <compound refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData" kind="class"><name>datastreamer::GRPC_FINAL::WithGenericMethod_RequestData</name>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1ac456158bb6d21c2cee8a26cd186febc9" kind="function"><name>BaseClassMustBeDerivedFromService</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1a2a518699569de03704116ab95ca61ab3" kind="function"><name>WithGenericMethod_RequestData</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1adadbc57029273f565f5a8e8be61de5cf" kind="function"><name>~WithGenericMethod_RequestData</name></member>
+    <member refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData_1a6b3ce56ae30ba9970e8801966f2a44ef" kind="function"><name>RequestData</name></member>
+  </compound>
+  <compound refid="classblocks_1_1WorkBlock" kind="class"><name>blocks::WorkBlock</name>
+    <member refid="classblocks_1_1WorkBlock_1a2da31a1afa8b2c616745fdf409fad693" kind="variable"><name>d_cf</name></member>
+    <member refid="classblocks_1_1WorkBlock_1a13e8734a217bb4e819e1f15fdfcc9c3c" kind="variable"><name>d_rf_gain</name></member>
+    <member refid="classblocks_1_1WorkBlock_1a94e3095b492dfdd4c100c6ee54133a22" kind="variable"><name>d_variable_sample_rate</name></member>
+    <member refid="classblocks_1_1WorkBlock_1a99af98d36908a14cc5afe3b7dbc85671" kind="variable"><name>d_source</name></member>
+    <member refid="classblocks_1_1WorkBlock_1ae8a7ab60446f50a021f57c89527fdc92" kind="variable"><name>d_low_pass_filter</name></member>
+    <member refid="classblocks_1_1WorkBlock_1ad0dbddc7f169ad3ae361cc970ab18ae2" kind="function"><name>WorkBlock</name></member>
+  </compound>
+  <compound refid="namespaceblocks" kind="namespace"><name>blocks</name>
+  </compound>
+  <compound refid="namespacedatastreamer" kind="namespace"><name>datastreamer</name>
+    <member refid="namespacedatastreamer_1a7288f8547d882127154e15b098da19d7" kind="variable"><name>_Reply_default_instance_</name></member>
+    <member refid="namespacedatastreamer_1ae9d41ac237162857e7458bbd87ec4d94" kind="variable"><name>_Request_default_instance_</name></member>
+  </compound>
+  <compound refid="namespacedatastreamer_1_1protobuf__data__5fstreamer__2eproto" kind="namespace"><name>datastreamer::protobuf_data_5fstreamer_2eproto</name>
+    <member refid="namespacedatastreamer_1_1protobuf__data__5fstreamer__2eproto_1a0ed5bbea9b51b1265e0ba1632d937a83" kind="function"><name>AddDescriptors</name></member>
+    <member refid="namespacedatastreamer_1_1protobuf__data__5fstreamer__2eproto_1a64cc309788ed54f48c371c6b6524e1ee" kind="function"><name>InitDefaults</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1grpc__blocks" kind="namespace"><name>gr::grpc_blocks</name>
+  </compound>
+  <compound refid="namespacegrpc" kind="namespace"><name>grpc</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1ac3fd8001221ab221302745617edd6a2e" kind="define"><name>GRPC_BLOCKS_API</name></member>
+  </compound>
+  <compound refid="data__streamer_8grpc_8pb_8h" kind="file"><name>data_streamer.grpc.pb.h</name>
+  </compound>
+  <compound refid="data__streamer_8pb_8h" kind="file"><name>data_streamer.pb.h</name>
+  </compound>
+  <compound refid="data__streamer_8server_8h" kind="file"><name>data_streamer.server.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="sink_8h" kind="file"><name>sink.h</name>
+  </compound>
+  <compound refid="sink__impl_8h" kind="file"><name>sink_impl.h</name>
+  </compound>
+  <compound refid="work__block_8h" kind="file"><name>work_block.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d688545da7e2e7d8698b07e4a8f0b35e" kind="dir"><name>grpc_blocks</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

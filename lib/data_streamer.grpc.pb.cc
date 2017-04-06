@@ -13,9 +13,10 @@
 #include <grpc++/impl/codegen/rpc_service_method.h>
 #include <grpc++/impl/codegen/service_type.h>
 #include <grpc++/impl/codegen/sync_stream.h>
+namespace datastreamer {
 
 static const char* DataStreamer_method_names[] = {
-  "/DataStreamer/RequestData",
+  "/datastreamer.DataStreamer/RequestData",
 };
 
 std::unique_ptr< DataStreamer::Stub> DataStreamer::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
@@ -27,12 +28,12 @@ DataStreamer::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& chann
   : channel_(channel), rpcmethod_RequestData_(DataStreamer_method_names[0], ::grpc::RpcMethod::SERVER_STREAMING, channel)
   {}
 
-::grpc::ClientReader< ::Reply>* DataStreamer::Stub::RequestDataRaw(::grpc::ClientContext* context, const ::Request& request) {
-  return new ::grpc::ClientReader< ::Reply>(channel_.get(), rpcmethod_RequestData_, context, request);
+::grpc::ClientReader< ::datastreamer::Reply>* DataStreamer::Stub::RequestDataRaw(::grpc::ClientContext* context, const ::datastreamer::Request& request) {
+  return new ::grpc::ClientReader< ::datastreamer::Reply>(channel_.get(), rpcmethod_RequestData_, context, request);
 }
 
-::grpc::ClientAsyncReader< ::Reply>* DataStreamer::Stub::AsyncRequestDataRaw(::grpc::ClientContext* context, const ::Request& request, ::grpc::CompletionQueue* cq, void* tag) {
-  return new ::grpc::ClientAsyncReader< ::Reply>(channel_.get(), cq, rpcmethod_RequestData_, context, request, tag);
+::grpc::ClientAsyncReader< ::datastreamer::Reply>* DataStreamer::Stub::AsyncRequestDataRaw(::grpc::ClientContext* context, const ::datastreamer::Request& request, ::grpc::CompletionQueue* cq, void* tag) {
+  return new ::grpc::ClientAsyncReader< ::datastreamer::Reply>(channel_.get(), cq, rpcmethod_RequestData_, context, request, tag);
 }
 
 DataStreamer::Service::Service() {
@@ -40,18 +41,20 @@ DataStreamer::Service::Service() {
   AddMethod(new ::grpc::RpcServiceMethod(
       DataStreamer_method_names[0],
       ::grpc::RpcMethod::SERVER_STREAMING,
-      new ::grpc::ServerStreamingHandler< DataStreamer::Service, ::Request, ::Reply>(
+      new ::grpc::ServerStreamingHandler< DataStreamer::Service, ::datastreamer::Request, ::datastreamer::Reply>(
           std::mem_fn(&DataStreamer::Service::RequestData), this)));
 }
 
 DataStreamer::Service::~Service() {
 }
 
-::grpc::Status DataStreamer::Service::RequestData(::grpc::ServerContext* context, const ::Request* request, ::grpc::ServerWriter< ::Reply>* writer) {
+::grpc::Status DataStreamer::Service::RequestData(::grpc::ServerContext* context, const ::datastreamer::Request* request, ::grpc::ServerWriter< ::datastreamer::Reply>* writer) {
   (void) context;
   (void) request;
   (void) writer;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
+
+}  // namespace datastreamer
 

@@ -29,12 +29,16 @@
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
+namespace datastreamer {
 class Reply;
 class ReplyDefaultTypeInternal;
 extern ReplyDefaultTypeInternal _Reply_default_instance_;
 class Request;
 class RequestDefaultTypeInternal;
 extern RequestDefaultTypeInternal _Request_default_instance_;
+}  // namespace datastreamer
+
+namespace datastreamer {
 
 namespace protobuf_data_5fstreamer_2eproto {
 // Internal implementation detail -- do not call these.
@@ -49,7 +53,7 @@ void InitDefaults();
 
 // ===================================================================
 
-class Request : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Request) */ {
+class Request : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:datastreamer.Request) */ {
  public:
   Request();
   virtual ~Request();
@@ -116,7 +120,7 @@ class Request : public ::google::protobuf::Message /* @@protoc_insertion_point(c
 
   // accessors -------------------------------------------------------
 
-  // @@protoc_insertion_point(class_scope:Request)
+  // @@protoc_insertion_point(class_scope:datastreamer.Request)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
@@ -125,7 +129,7 @@ class Request : public ::google::protobuf::Message /* @@protoc_insertion_point(c
 };
 // -------------------------------------------------------------------
 
-class Reply : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Reply) */ {
+class Reply : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:datastreamer.Reply) */ {
  public:
   Reply();
   virtual ~Reply();
@@ -198,7 +202,7 @@ class Reply : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   float message() const;
   void set_message(float value);
 
-  // @@protoc_insertion_point(class_scope:Reply)
+  // @@protoc_insertion_point(class_scope:datastreamer.Reply)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
@@ -223,13 +227,13 @@ inline void Reply::clear_message() {
   message_ = 0;
 }
 inline float Reply::message() const {
-  // @@protoc_insertion_point(field_get:Reply.message)
+  // @@protoc_insertion_point(field_get:datastreamer.Reply.message)
   return message_;
 }
 inline void Reply::set_message(float value) {
   
   message_ = value;
-  // @@protoc_insertion_point(field_set:Reply.message)
+  // @@protoc_insertion_point(field_set:datastreamer.Reply.message)
 }
 
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -238,6 +242,8 @@ inline void Reply::set_message(float value) {
 
 // @@protoc_insertion_point(namespace_scope)
 
+
+}  // namespace datastreamer
 
 // @@protoc_insertion_point(global_scope)
 

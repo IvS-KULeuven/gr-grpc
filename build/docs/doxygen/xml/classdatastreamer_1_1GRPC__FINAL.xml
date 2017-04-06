@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classdatastreamer_1_1GRPC__FINAL" kind="class" language="C++" prot="public">
+    <compoundname>datastreamer::GRPC_FINAL</compoundname>
+    <includes refid="data__streamer_8grpc_8pb_8h" local="no">data_streamer.grpc.pb.h</includes>
+    <innerclass refid="classdatastreamer_1_1GRPC__FINAL_1_1GRPC__FINAL" prot="public">datastreamer::GRPC_FINAL::GRPC_FINAL</innerclass>
+    <innerclass refid="classdatastreamer_1_1GRPC__FINAL_1_1Service" prot="public">datastreamer::GRPC_FINAL::Service</innerclass>
+    <innerclass refid="classdatastreamer_1_1GRPC__FINAL_1_1StubInterface" prot="public">datastreamer::GRPC_FINAL::StubInterface</innerclass>
+    <innerclass refid="classdatastreamer_1_1GRPC__FINAL_1_1WithAsyncMethod__RequestData" prot="public">datastreamer::GRPC_FINAL::WithAsyncMethod_RequestData</innerclass>
+    <innerclass refid="classdatastreamer_1_1GRPC__FINAL_1_1WithGenericMethod__RequestData" prot="public">datastreamer::GRPC_FINAL::WithGenericMethod_RequestData</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdatastreamer_1_1GRPC__FINAL_1a4c9491b6baa9b19c9134a92a74c6c810" prot="public" static="no">
+        <type><ref refid="classdatastreamer_1_1GRPC__FINAL_1_1WithAsyncMethod__RequestData" kindref="compound">WithAsyncMethod_RequestData</ref>&lt; <ref refid="classdatastreamer_1_1GRPC__FINAL_1_1Service" kindref="compound">Service</ref> &gt;</type>
+        <definition>typedef WithAsyncMethod_RequestData&lt;Service &gt; datastreamer::GRPC_FINAL::AsyncService</definition>
+        <argsstring></argsstring>
+        <name>AsyncService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="87" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdatastreamer_1_1GRPC__FINAL_1a7dae76922d5f46ed390406a16876b898" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unique_ptr&lt; Stub &gt;</type>
+        <definition>static std::unique_ptr&lt;Stub&gt; datastreamer::GRPC_FINAL::NewStub</definition>
+        <argsstring>(const std::shared_ptr&lt; ::grpc::ChannelInterface &gt; &amp;channel, const ::grpc::StubOptions &amp;options=::grpc::StubOptions())</argsstring>
+        <name>NewStub</name>
+        <param>
+          <type>const std::shared_ptr&lt; ::grpc::ChannelInterface &gt; &amp;</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const ::grpc::StubOptions &amp;</type>
+          <declname>options</declname>
+          <defval>::grpc::StubOptions()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" line="28" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.h" bodystart="28" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1a4c9491b6baa9b19c9134a92a74c6c810" prot="public" virt="non-virtual"><scope>datastreamer::GRPC_FINAL</scope><name>AsyncService</name></member>
+      <member refid="classdatastreamer_1_1GRPC__FINAL_1a7dae76922d5f46ed390406a16876b898" prot="public" virt="non-virtual"><scope>datastreamer::GRPC_FINAL</scope><name>NewStub</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

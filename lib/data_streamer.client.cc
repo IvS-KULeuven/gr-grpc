@@ -11,6 +11,7 @@ using grpc::Channel;
 using grpc::ClientContext;
 using grpc::Status;
 using grpc::ClientReader;
+using namespace datastreamer;
 
 class DataStreamerClient {
  public:

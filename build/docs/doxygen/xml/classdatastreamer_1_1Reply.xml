@@ -1,0 +1,635 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classdatastreamer_1_1Reply" kind="class" language="C++" prot="public">
+    <compoundname>datastreamer::Reply</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Message</basecompoundref>
+    <includes refid="data__streamer_8pb_8h" local="no">data_streamer.pb.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdatastreamer_1_1Reply_1ad9b15f72fb2da11f3d26c4c5a5c757bf" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int datastreamer::Reply::kMessageFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>kMessageFieldNumber</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="201" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdatastreamer_1_1Reply_1ab50b7714ce0a9b109277c5ae334f655f" prot="private" static="no" mutable="no">
+        <type>::google::protobuf::internal::InternalMetadataWithArena</type>
+        <definition>::google::protobuf::internal::InternalMetadataWithArena datastreamer::Reply::_internal_metadata_</definition>
+        <argsstring></argsstring>
+        <name>_internal_metadata_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="208" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdatastreamer_1_1Reply_1a24a1803dc6c9bb4e085d0e930cf83b5d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float datastreamer::Reply::message_</definition>
+        <argsstring></argsstring>
+        <name>message_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="209" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdatastreamer_1_1Reply_1a94abac2d5b9365aacccf967e32eb7acc" prot="private" static="no" mutable="yes">
+        <type>int</type>
+        <definition>int datastreamer::Reply::_cached_size_</definition>
+        <argsstring></argsstring>
+        <name>_cached_size_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="210" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdatastreamer_1_1Reply_1a61a0e2139aa17ec92386a2d3642969a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct protobuf_data_5fstreamer_2eproto::TableStruct</definition>
+        <argsstring></argsstring>
+        <name>protobuf_data_5fstreamer_2eproto::TableStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="211" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a12657d5cf40278b0e8ea5e04110bef1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>datastreamer::Reply::Reply</definition>
+        <argsstring>()</argsstring>
+        <name>Reply</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a05a94841697376f4f8de18182372c9d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual datastreamer::Reply::~Reply</definition>
+        <argsstring>()</argsstring>
+        <name>~Reply</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a0f4f7ae6998627f1633608c6097c16e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>datastreamer::Reply::Reply</definition>
+        <argsstring>(const Reply &amp;from)</argsstring>
+        <name>Reply</name>
+        <param>
+          <type>const <ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a3593aec1ac2149a6b36a979924f5330a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> &amp;</type>
+        <definition>Reply&amp; datastreamer::Reply::operator=</definition>
+        <argsstring>(const Reply &amp;from)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="139" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a0439799ece48607ccdc13e4e2a4405bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::Swap</definition>
+        <argsstring>(Reply *other)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type><ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a5cc48b3c6f31ff1bc4deb96eced029dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> *</type>
+        <definition>Reply* datastreamer::Reply::New</definition>
+        <argsstring>() const PROTOBUF_FINAL</argsstring>
+        <name>New</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="156" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="156" bodyend="156"/>
+        <references refid="classdatastreamer_1_1Reply_1a5cc48b3c6f31ff1bc4deb96eced029dc" compoundref="data__streamer_8pb_8h" startline="156" endline="156">New</references>
+        <referencedby refid="classdatastreamer_1_1Reply_1a5cc48b3c6f31ff1bc4deb96eced029dc" compoundref="data__streamer_8pb_8h" startline="156" endline="156">New</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1aad1c4f0a794367b9f3c07cd0a31dbc25" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> *</type>
+        <definition>Reply* datastreamer::Reply::New</definition>
+        <argsstring>(::google::protobuf::Arena *arena) const PROTOBUF_FINAL</argsstring>
+        <name>New</name>
+        <param>
+          <type>::google::protobuf::Arena *</type>
+          <declname>arena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1ab3438572c2e47a9b16b93d46f344fd0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::CopyFrom</definition>
+        <argsstring>(const ::google::protobuf::Message &amp;from) PROTOBUF_FINAL</argsstring>
+        <name>CopyFrom</name>
+        <param>
+          <type>const ::google::protobuf::Message &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a020f9f92fdc92f966e443ff20c0473b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::MergeFrom</definition>
+        <argsstring>(const ::google::protobuf::Message &amp;from) PROTOBUF_FINAL</argsstring>
+        <name>MergeFrom</name>
+        <param>
+          <type>const ::google::protobuf::Message &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a3d2169e75d723019236d0057ca76b988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::CopyFrom</definition>
+        <argsstring>(const Reply &amp;from)</argsstring>
+        <name>CopyFrom</name>
+        <param>
+          <type>const <ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a30c97ea016b68d01e232a9b61917576e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::MergeFrom</definition>
+        <argsstring>(const Reply &amp;from)</argsstring>
+        <name>MergeFrom</name>
+        <param>
+          <type>const <ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a050274829f72d90f9fbc242cb5c74a84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::Clear</definition>
+        <argsstring>() PROTOBUF_FINAL</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a4919911da470b7eff53c458ccaef02ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool datastreamer::Reply::IsInitialized</definition>
+        <argsstring>() const PROTOBUF_FINAL</argsstring>
+        <name>IsInitialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a8a7bbc3a01e464324803872af17cffec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t datastreamer::Reply::ByteSizeLong</definition>
+        <argsstring>() const PROTOBUF_FINAL</argsstring>
+        <name>ByteSizeLong</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a1427e6902311330135039819e8a34b9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool datastreamer::Reply::MergePartialFromCodedStream</definition>
+        <argsstring>(::google::protobuf::io::CodedInputStream *input) PROTOBUF_FINAL</argsstring>
+        <name>MergePartialFromCodedStream</name>
+        <param>
+          <type>::google::protobuf::io::CodedInputStream *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a23e036772cd5a04f8fe9c7d63494d817" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::SerializeWithCachedSizes</definition>
+        <argsstring>(::google::protobuf::io::CodedOutputStream *output) const PROTOBUF_FINAL</argsstring>
+        <name>SerializeWithCachedSizes</name>
+        <param>
+          <type>::google::protobuf::io::CodedOutputStream *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1aa992731103cd5fd70ae7a7752543a482" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>::google::protobuf::uint8 *</type>
+        <definition>::google::protobuf::uint8* datastreamer::Reply::InternalSerializeWithCachedSizesToArray</definition>
+        <argsstring>(bool deterministic, ::google::protobuf::uint8 *target) const PROTOBUF_FINAL</argsstring>
+        <name>InternalSerializeWithCachedSizesToArray</name>
+        <param>
+          <type>bool</type>
+          <declname>deterministic</declname>
+        </param>
+        <param>
+          <type>::google::protobuf::uint8 *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a47a6b5578f63868545ff791ef5a5bee8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>::google::protobuf::uint8 *</type>
+        <definition>::google::protobuf::uint8* datastreamer::Reply::SerializeWithCachedSizesToArray</definition>
+        <argsstring>(::google::protobuf::uint8 *output) const PROTOBUF_FINAL</argsstring>
+        <name>SerializeWithCachedSizesToArray</name>
+        <param>
+          <type>::google::protobuf::uint8 *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="173" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="173" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a7fab61f6b2b40042a11ed6986f52abe3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int datastreamer::Reply::GetCachedSize</definition>
+        <argsstring>() const PROTOBUF_FINAL</argsstring>
+        <name>GetCachedSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="178" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="178" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a76ee66b88f019d9600814094534ec585" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>::google::protobuf::Metadata</type>
+        <definition>::google::protobuf::Metadata datastreamer::Reply::GetMetadata</definition>
+        <argsstring>() const PROTOBUF_FINAL</argsstring>
+        <name>GetMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1ac6f438f4a338fb88b8ff784afb28b6e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::clear_message</definition>
+        <argsstring>()</argsstring>
+        <name>clear_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="200" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="226" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a855bde9c744710736efb4e9efd32dcf2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float datastreamer::Reply::message</definition>
+        <argsstring>() const</argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="202" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="229" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1ad0b4c3eed6356be6be9efbb91bd7c31d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::set_message</definition>
+        <argsstring>(float value)</argsstring>
+        <name>set_message</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="203" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="233" bodyend="237"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a2293fa3fe96db28139c78f608b8dc796" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const ::google::protobuf::Descriptor *</type>
+        <definition>static const ::google::protobuf::Descriptor* datastreamer::Reply::descriptor</definition>
+        <argsstring>()</argsstring>
+        <name>descriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1af08ee92724146e57acb5427784fc4d59" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> &amp;</type>
+        <definition>static const Reply&amp; datastreamer::Reply::default_instance</definition>
+        <argsstring>()</argsstring>
+        <name>default_instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a06acb9ec8c38d5585684ae4947d83083" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> *</type>
+        <definition>static const Reply* datastreamer::Reply::internal_default_instance</definition>
+        <argsstring>()</argsstring>
+        <name>internal_default_instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="147" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="147" bodyend="150"/>
+        <references refid="namespacedatastreamer_1a7288f8547d882127154e15b098da19d7">datastreamer::_Reply_default_instance_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a44dc26ae128f897c8e560c2807bd228f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::SharedCtor</definition>
+        <argsstring>()</argsstring>
+        <name>SharedCtor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a914d9c47cbf63e2aed7ce5bae03dbdcc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::SharedDtor</definition>
+        <argsstring>()</argsstring>
+        <name>SharedDtor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1ae142690571c15ad1a7ae3672e79de460" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::SetCachedSize</definition>
+        <argsstring>(int size) const PROTOBUF_FINAL</argsstring>
+        <name>SetCachedSize</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a86a82b274818c6d20c9bdfd70b7d1fce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::Reply::InternalSwap</definition>
+        <argsstring>(Reply *other)</argsstring>
+        <name>InternalSwap</name>
+        <param>
+          <type><ref refid="classdatastreamer_1_1Reply" kindref="compound">Reply</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1ae255ac7118fb23995f07b5397d861eb6" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>inline ::google::protobuf::Arena *</type>
+        <definition>inline ::google::protobuf::Arena* datastreamer::Reply::GetArenaNoVirtual</definition>
+        <argsstring>() const</argsstring>
+        <name>GetArenaNoVirtual</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="185" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="185" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatastreamer_1_1Reply_1a4004e483ef9c996d0912feaa619be249" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* datastreamer::Reply::MaybeArenaPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>MaybeArenaPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="188" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="188" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>Message</label>
+      </node>
+      <node id="10">
+        <label>datastreamer::Reply</label>
+        <link refid="classdatastreamer_1_1Reply"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>Message</label>
+      </node>
+      <node id="12">
+        <label>datastreamer::Reply</label>
+        <link refid="classdatastreamer_1_1Reply"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="132" column="1" bodyfile="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" bodystart="132" bodyend="212"/>
+    <listofallmembers>
+      <member refid="classdatastreamer_1_1Reply_1a94abac2d5b9365aacccf967e32eb7acc" prot="private" virt="non-virtual"><scope>datastreamer::Reply</scope><name>_cached_size_</name></member>
+      <member refid="classdatastreamer_1_1Reply_1ab50b7714ce0a9b109277c5ae334f655f" prot="private" virt="non-virtual"><scope>datastreamer::Reply</scope><name>_internal_metadata_</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a8a7bbc3a01e464324803872af17cffec" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>ByteSizeLong</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a050274829f72d90f9fbc242cb5c74a84" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>Clear</name></member>
+      <member refid="classdatastreamer_1_1Reply_1ac6f438f4a338fb88b8ff784afb28b6e8" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>clear_message</name></member>
+      <member refid="classdatastreamer_1_1Reply_1ab3438572c2e47a9b16b93d46f344fd0a" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>CopyFrom</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a3d2169e75d723019236d0057ca76b988" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>CopyFrom</name></member>
+      <member refid="classdatastreamer_1_1Reply_1af08ee92724146e57acb5427784fc4d59" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>default_instance</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a2293fa3fe96db28139c78f608b8dc796" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>descriptor</name></member>
+      <member refid="classdatastreamer_1_1Reply_1ae255ac7118fb23995f07b5397d861eb6" prot="private" virt="non-virtual"><scope>datastreamer::Reply</scope><name>GetArenaNoVirtual</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a7fab61f6b2b40042a11ed6986f52abe3" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>GetCachedSize</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a76ee66b88f019d9600814094534ec585" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>GetMetadata</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a06acb9ec8c38d5585684ae4947d83083" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>internal_default_instance</name></member>
+      <member refid="classdatastreamer_1_1Reply_1aa992731103cd5fd70ae7a7752543a482" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>InternalSerializeWithCachedSizesToArray</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a86a82b274818c6d20c9bdfd70b7d1fce" prot="private" virt="non-virtual"><scope>datastreamer::Reply</scope><name>InternalSwap</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a4919911da470b7eff53c458ccaef02ea" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>IsInitialized</name></member>
+      <member refid="classdatastreamer_1_1Reply_1ad9b15f72fb2da11f3d26c4c5a5c757bf" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>kMessageFieldNumber</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a4004e483ef9c996d0912feaa619be249" prot="private" virt="non-virtual"><scope>datastreamer::Reply</scope><name>MaybeArenaPtr</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a020f9f92fdc92f966e443ff20c0473b9" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>MergeFrom</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a30c97ea016b68d01e232a9b61917576e" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>MergeFrom</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a1427e6902311330135039819e8a34b9d" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>MergePartialFromCodedStream</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a855bde9c744710736efb4e9efd32dcf2" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>message</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a24a1803dc6c9bb4e085d0e930cf83b5d" prot="private" virt="non-virtual"><scope>datastreamer::Reply</scope><name>message_</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a5cc48b3c6f31ff1bc4deb96eced029dc" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>New</name></member>
+      <member refid="classdatastreamer_1_1Reply_1aad1c4f0a794367b9f3c07cd0a31dbc25" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>New</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a3593aec1ac2149a6b36a979924f5330a" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>operator=</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a61a0e2139aa17ec92386a2d3642969a5" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>protobuf_data_5fstreamer_2eproto::TableStruct</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a12657d5cf40278b0e8ea5e04110bef1f" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>Reply</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a0f4f7ae6998627f1633608c6097c16e7" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>Reply</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a23e036772cd5a04f8fe9c7d63494d817" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>SerializeWithCachedSizes</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a47a6b5578f63868545ff791ef5a5bee8" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>SerializeWithCachedSizesToArray</name></member>
+      <member refid="classdatastreamer_1_1Reply_1ad0b4c3eed6356be6be9efbb91bd7c31d" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>set_message</name></member>
+      <member refid="classdatastreamer_1_1Reply_1ae142690571c15ad1a7ae3672e79de460" prot="private" virt="non-virtual"><scope>datastreamer::Reply</scope><name>SetCachedSize</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a44dc26ae128f897c8e560c2807bd228f" prot="private" virt="non-virtual"><scope>datastreamer::Reply</scope><name>SharedCtor</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a914d9c47cbf63e2aed7ce5bae03dbdcc" prot="private" virt="non-virtual"><scope>datastreamer::Reply</scope><name>SharedDtor</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a0439799ece48607ccdc13e4e2a4405bc" prot="public" virt="non-virtual"><scope>datastreamer::Reply</scope><name>Swap</name></member>
+      <member refid="classdatastreamer_1_1Reply_1a05a94841697376f4f8de18182372c9d2" prot="public" virt="virtual"><scope>datastreamer::Reply</scope><name>~Reply</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

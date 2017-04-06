@@ -23,35 +23,37 @@ class ServerCompletionQueue;
 class ServerContext;
 }  // namespace grpc
 
+namespace datastreamer {
+
 class DataStreamer GRPC_FINAL {
  public:
   class StubInterface {
    public:
     virtual ~StubInterface() {}
-    std::unique_ptr< ::grpc::ClientReaderInterface< ::Reply>> RequestData(::grpc::ClientContext* context, const ::Request& request) {
-      return std::unique_ptr< ::grpc::ClientReaderInterface< ::Reply>>(RequestDataRaw(context, request));
+    std::unique_ptr< ::grpc::ClientReaderInterface< ::datastreamer::Reply>> RequestData(::grpc::ClientContext* context, const ::datastreamer::Request& request) {
+      return std::unique_ptr< ::grpc::ClientReaderInterface< ::datastreamer::Reply>>(RequestDataRaw(context, request));
     }
-    std::unique_ptr< ::grpc::ClientAsyncReaderInterface< ::Reply>> AsyncRequestData(::grpc::ClientContext* context, const ::Request& request, ::grpc::CompletionQueue* cq, void* tag) {
-      return std::unique_ptr< ::grpc::ClientAsyncReaderInterface< ::Reply>>(AsyncRequestDataRaw(context, request, cq, tag));
+    std::unique_ptr< ::grpc::ClientAsyncReaderInterface< ::datastreamer::Reply>> AsyncRequestData(::grpc::ClientContext* context, const ::datastreamer::Request& request, ::grpc::CompletionQueue* cq, void* tag) {
+      return std::unique_ptr< ::grpc::ClientAsyncReaderInterface< ::datastreamer::Reply>>(AsyncRequestDataRaw(context, request, cq, tag));
     }
   private:
-    virtual ::grpc::ClientReaderInterface< ::Reply>* RequestDataRaw(::grpc::ClientContext* context, const ::Request& request) = 0;
-    virtual ::grpc::ClientAsyncReaderInterface< ::Reply>* AsyncRequestDataRaw(::grpc::ClientContext* context, const ::Request& request, ::grpc::CompletionQueue* cq, void* tag) = 0;
+    virtual ::grpc::ClientReaderInterface< ::datastreamer::Reply>* RequestDataRaw(::grpc::ClientContext* context, const ::datastreamer::Request& request) = 0;
+    virtual ::grpc::ClientAsyncReaderInterface< ::datastreamer::Reply>* AsyncRequestDataRaw(::grpc::ClientContext* context, const ::datastreamer::Request& request, ::grpc::CompletionQueue* cq, void* tag) = 0;
   };
   class Stub GRPC_FINAL : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    std::unique_ptr< ::grpc::ClientReader< ::Reply>> RequestData(::grpc::ClientContext* context, const ::Request& request) {
-      return std::unique_ptr< ::grpc::ClientReader< ::Reply>>(RequestDataRaw(context, request));
+    std::unique_ptr< ::grpc::ClientReader< ::datastreamer::Reply>> RequestData(::grpc::ClientContext* context, const ::datastreamer::Request& request) {
+      return std::unique_ptr< ::grpc::ClientReader< ::datastreamer::Reply>>(RequestDataRaw(context, request));
     }
-    std::unique_ptr< ::grpc::ClientAsyncReader< ::Reply>> AsyncRequestData(::grpc::ClientContext* context, const ::Request& request, ::grpc::CompletionQueue* cq, void* tag) {
-      return std::unique_ptr< ::grpc::ClientAsyncReader< ::Reply>>(AsyncRequestDataRaw(context, request, cq, tag));
+    std::unique_ptr< ::grpc::ClientAsyncReader< ::datastreamer::Reply>> AsyncRequestData(::grpc::ClientContext* context, const ::datastreamer::Request& request, ::grpc::CompletionQueue* cq, void* tag) {
+      return std::unique_ptr< ::grpc::ClientAsyncReader< ::datastreamer::Reply>>(AsyncRequestDataRaw(context, request, cq, tag));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientReader< ::Reply>* RequestDataRaw(::grpc::ClientContext* context, const ::Request& request) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncReader< ::Reply>* AsyncRequestDataRaw(::grpc::ClientContext* context, const ::Request& request, ::grpc::CompletionQueue* cq, void* tag) GRPC_OVERRIDE;
+    ::grpc::ClientReader< ::datastreamer::Reply>* RequestDataRaw(::grpc::ClientContext* context, const ::datastreamer::Request& request) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncReader< ::datastreamer::Reply>* AsyncRequestDataRaw(::grpc::ClientContext* context, const ::datastreamer::Request& request, ::grpc::CompletionQueue* cq, void* tag) GRPC_OVERRIDE;
     const ::grpc::RpcMethod rpcmethod_RequestData_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
@@ -60,7 +62,7 @@ class DataStreamer GRPC_FINAL {
    public:
     Service();
     virtual ~Service();
-    virtual ::grpc::Status RequestData(::grpc::ServerContext* context, const ::Request* request, ::grpc::ServerWriter< ::Reply>* writer);
+    virtual ::grpc::Status RequestData(::grpc::ServerContext* context, const ::datastreamer::Request* request, ::grpc::ServerWriter< ::datastreamer::Reply>* writer);
   };
   template <class BaseClass>
   class WithAsyncMethod_RequestData : public BaseClass {
@@ -74,11 +76,11 @@ class DataStreamer GRPC_FINAL {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status RequestData(::grpc::ServerContext* context, const ::Request* request, ::grpc::ServerWriter< ::Reply>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status RequestData(::grpc::ServerContext* context, const ::datastreamer::Request* request, ::grpc::ServerWriter< ::datastreamer::Reply>* writer) GRPC_FINAL GRPC_OVERRIDE {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestRequestData(::grpc::ServerContext* context, ::Request* request, ::grpc::ServerAsyncWriter< ::Reply>* writer, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestRequestData(::grpc::ServerContext* context, ::datastreamer::Request* request, ::grpc::ServerAsyncWriter< ::datastreamer::Reply>* writer, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncServerStreaming(0, context, request, writer, new_call_cq, notification_cq, tag);
     }
   };
@@ -95,12 +97,14 @@ class DataStreamer GRPC_FINAL {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status RequestData(::grpc::ServerContext* context, const ::Request* request, ::grpc::ServerWriter< ::Reply>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status RequestData(::grpc::ServerContext* context, const ::datastreamer::Request* request, ::grpc::ServerWriter< ::datastreamer::Reply>* writer) GRPC_FINAL GRPC_OVERRIDE {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
 };
+
+}  // namespace datastreamer
 
 
 #endif  // GRPC_data_5fstreamer_2eproto__INCLUDED

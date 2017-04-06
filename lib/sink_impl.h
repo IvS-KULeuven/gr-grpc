@@ -30,6 +30,9 @@
 using grpc::ServerWriter;
 using grpc::Server;
 
+using datastreamer::Request;
+using datastreamer::Reply;
+
 namespace gr {
   namespace grpc_blocks {
 
@@ -41,8 +44,8 @@ namespace gr {
       void run_server();
      
     public:
-      ServerWriter<Reply>* server_writer;
-        
+      
+      ServerWriter<Reply>* server_writer = nullptr;
       sink_impl();
       ~sink_impl();
 

@@ -1,0 +1,19 @@
+Start testing: Mar 21 14:54 CET
+----------------------------------------------------------
+1/2 Testing: test_grpc_blocks
+1/2 Test: test_grpc_blocks
+Command: "/usr/bin/sh" "/home/wimc/project/gr_mods/gr-grpc_blocks/build/lib/test_grpc_blocks_test.sh"
+Directory: /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib
+"test_grpc_blocks" start time: Mar 21 14:54 CET
+Output:
+----------------------------------------------------------
+
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"test_grpc_blocks" end time: Mar 21 14:54 CET
+"test_grpc_blocks" time elapsed: 00:00:00
+----------------------------------------------------------
+

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wimc/project/gr_mods/gr-grpc_blocks/lib/qa_grpc_blocks.cc
+qa_grpc_blocks.h
+/home/wimc/project/gr_mods/gr-grpc_blocks/lib/qa_grpc_blocks.h
+
+/home/wimc/project/gr_mods/gr-grpc_blocks/lib/qa_grpc_blocks.h
+gnuradio/attributes.h
+-
+cppunit/TestSuite.h
+-
+
+/home/wimc/project/gr_mods/gr-grpc_blocks/lib/test_grpc_blocks.cc
+config.h
+/home/wimc/project/gr_mods/gr-grpc_blocks/lib/config.h
+cppunit/TextTestRunner.h
+-
+cppunit/XmlOutputter.h
+-
+gnuradio/unittests.h
+-
+qa_grpc_blocks.h
+/home/wimc/project/gr_mods/gr-grpc_blocks/lib/qa_grpc_blocks.h
+iostream
+-
+fstream
+-
+

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacedatastreamer_1_1protobuf__data__5fstreamer__2eproto" kind="namespace" language="C++">
+    <compoundname>datastreamer::protobuf_data_5fstreamer_2eproto</compoundname>
+    <innerclass refid="structdatastreamer_1_1protobuf__data__5fstreamer__2eproto_1_1TableStruct" prot="public">datastreamer::protobuf_data_5fstreamer_2eproto::TableStruct</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedatastreamer_1_1protobuf__data__5fstreamer__2eproto_1a0ed5bbea9b51b1265e0ba1632d937a83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::protobuf_data_5fstreamer_2eproto::AddDescriptors</definition>
+        <argsstring>()</argsstring>
+        <name>AddDescriptors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedatastreamer_1_1protobuf__data__5fstreamer__2eproto_1a64cc309788ed54f48c371c6b6524e1ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void datastreamer::protobuf_data_5fstreamer_2eproto::InitDefaults</definition>
+        <argsstring>()</argsstring>
+        <name>InitDefaults</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.h" line="43" column="1"/>
+  </compounddef>
+</doxygen>

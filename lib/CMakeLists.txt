@@ -32,10 +32,11 @@ find_package(Protobuf REQUIRED)
 include_directories(${PROTOBUF_INCLUDE_DIR})
 
 list(APPEND grpc_blocks_sources
-    sink_impl.cc
     data_streamer.grpc.pb.cc
     data_streamer.pb.cc
     data_streamer.server.cc
+    sink_impl.cc
+    source_impl.cc
 )
 
 set(grpc_blocks_sources "${grpc_blocks_sources}" PARENT_SCOPE)
