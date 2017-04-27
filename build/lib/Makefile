@@ -195,87 +195,6 @@ test-grpc_blocks/fast:
 	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/test-grpc_blocks.dir/build.make lib/CMakeFiles/test-grpc_blocks.dir/build
 .PHONY : test-grpc_blocks/fast
 
-data_streamer.grpc.pb.o: data_streamer.grpc.pb.cc.o
-
-.PHONY : data_streamer.grpc.pb.o
-
-# target to build an object file
-data_streamer.grpc.pb.cc.o:
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o
-.PHONY : data_streamer.grpc.pb.cc.o
-
-data_streamer.grpc.pb.i: data_streamer.grpc.pb.cc.i
-
-.PHONY : data_streamer.grpc.pb.i
-
-# target to preprocess a source file
-data_streamer.grpc.pb.cc.i:
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.i
-.PHONY : data_streamer.grpc.pb.cc.i
-
-data_streamer.grpc.pb.s: data_streamer.grpc.pb.cc.s
-
-.PHONY : data_streamer.grpc.pb.s
-
-# target to generate assembly for a file
-data_streamer.grpc.pb.cc.s:
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.s
-.PHONY : data_streamer.grpc.pb.cc.s
-
-data_streamer.pb.o: data_streamer.pb.cc.o
-
-.PHONY : data_streamer.pb.o
-
-# target to build an object file
-data_streamer.pb.cc.o:
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o
-.PHONY : data_streamer.pb.cc.o
-
-data_streamer.pb.i: data_streamer.pb.cc.i
-
-.PHONY : data_streamer.pb.i
-
-# target to preprocess a source file
-data_streamer.pb.cc.i:
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.i
-.PHONY : data_streamer.pb.cc.i
-
-data_streamer.pb.s: data_streamer.pb.cc.s
-
-.PHONY : data_streamer.pb.s
-
-# target to generate assembly for a file
-data_streamer.pb.cc.s:
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.s
-.PHONY : data_streamer.pb.cc.s
-
-data_streamer.server.o: data_streamer.server.cc.o
-
-.PHONY : data_streamer.server.o
-
-# target to build an object file
-data_streamer.server.cc.o:
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o
-.PHONY : data_streamer.server.cc.o
-
-data_streamer.server.i: data_streamer.server.cc.i
-
-.PHONY : data_streamer.server.i
-
-# target to preprocess a source file
-data_streamer.server.cc.i:
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.i
-.PHONY : data_streamer.server.cc.i
-
-data_streamer.server.s: data_streamer.server.cc.s
-
-.PHONY : data_streamer.server.s
-
-# target to generate assembly for a file
-data_streamer.server.cc.s:
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.s
-.PHONY : data_streamer.server.cc.s
-
 qa_grpc_blocks.o: qa_grpc_blocks.cc.o
 
 .PHONY : qa_grpc_blocks.o
@@ -302,6 +221,87 @@ qa_grpc_blocks.s: qa_grpc_blocks.cc.s
 qa_grpc_blocks.cc.s:
 	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/test-grpc_blocks.dir/build.make lib/CMakeFiles/test-grpc_blocks.dir/qa_grpc_blocks.cc.s
 .PHONY : qa_grpc_blocks.cc.s
+
+radio.grpc.pb.o: radio.grpc.pb.cc.o
+
+.PHONY : radio.grpc.pb.o
+
+# target to build an object file
+radio.grpc.pb.cc.o:
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o
+.PHONY : radio.grpc.pb.cc.o
+
+radio.grpc.pb.i: radio.grpc.pb.cc.i
+
+.PHONY : radio.grpc.pb.i
+
+# target to preprocess a source file
+radio.grpc.pb.cc.i:
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.i
+.PHONY : radio.grpc.pb.cc.i
+
+radio.grpc.pb.s: radio.grpc.pb.cc.s
+
+.PHONY : radio.grpc.pb.s
+
+# target to generate assembly for a file
+radio.grpc.pb.cc.s:
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.s
+.PHONY : radio.grpc.pb.cc.s
+
+radio.pb.o: radio.pb.cc.o
+
+.PHONY : radio.pb.o
+
+# target to build an object file
+radio.pb.cc.o:
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o
+.PHONY : radio.pb.cc.o
+
+radio.pb.i: radio.pb.cc.i
+
+.PHONY : radio.pb.i
+
+# target to preprocess a source file
+radio.pb.cc.i:
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.i
+.PHONY : radio.pb.cc.i
+
+radio.pb.s: radio.pb.cc.s
+
+.PHONY : radio.pb.s
+
+# target to generate assembly for a file
+radio.pb.cc.s:
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.s
+.PHONY : radio.pb.cc.s
+
+radio.server.o: radio.server.cc.o
+
+.PHONY : radio.server.o
+
+# target to build an object file
+radio.server.cc.o:
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o
+.PHONY : radio.server.cc.o
+
+radio.server.i: radio.server.cc.i
+
+.PHONY : radio.server.i
+
+# target to preprocess a source file
+radio.server.cc.i:
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.i
+.PHONY : radio.server.cc.i
+
+radio.server.s: radio.server.cc.s
+
+.PHONY : radio.server.s
+
+# target to generate assembly for a file
+radio.server.cc.s:
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.s
+.PHONY : radio.server.cc.s
 
 sink_impl.o: sink_impl.cc.o
 
@@ -399,18 +399,18 @@ help:
 	@echo "... test-grpc_blocks"
 	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... data_streamer.grpc.pb.o"
-	@echo "... data_streamer.grpc.pb.i"
-	@echo "... data_streamer.grpc.pb.s"
-	@echo "... data_streamer.pb.o"
-	@echo "... data_streamer.pb.i"
-	@echo "... data_streamer.pb.s"
-	@echo "... data_streamer.server.o"
-	@echo "... data_streamer.server.i"
-	@echo "... data_streamer.server.s"
 	@echo "... qa_grpc_blocks.o"
 	@echo "... qa_grpc_blocks.i"
 	@echo "... qa_grpc_blocks.s"
+	@echo "... radio.grpc.pb.o"
+	@echo "... radio.grpc.pb.i"
+	@echo "... radio.grpc.pb.s"
+	@echo "... radio.pb.o"
+	@echo "... radio.pb.i"
+	@echo "... radio.pb.s"
+	@echo "... radio.server.o"
+	@echo "... radio.server.i"
+	@echo "... radio.server.s"
 	@echo "... sink_impl.o"
 	@echo "... sink_impl.i"
 	@echo "... sink_impl.s"

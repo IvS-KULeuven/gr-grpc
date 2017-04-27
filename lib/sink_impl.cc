@@ -1,3 +1,4 @@
+#include "radio.server.h"
 /* -*- c++ -*- */
 /* 
  * Copyright 2017 <+YOU OR YOUR COMPANY+>.
@@ -31,10 +32,11 @@
 #include <grpc++/server_builder.h>
 #include <grpc++/server_context.h>
 
-#include "data_streamer.server.h"
+// #include "data_streamer.server.h"
 #include <boost/thread/thread.hpp>
 #include <gnuradio/io_signature.h>
-#include "data_streamer.grpc.pb.h"
+#include "radio.grpc.pb.h"
+#include "radio.server.h"
 
 #include "sink_impl.h"
 
@@ -42,10 +44,7 @@ using grpc::Server;
 using grpc::ServerBuilder;
 using grpc::ServerContext;
 using grpc::Status;
-
-using datastreamer::Request;
-using datastreamer::Reply;
-using datastreamer::DataStreamer;
+using namespace radio_rpc;
 
 namespace gr {
   namespace grpc_blocks {
@@ -53,9 +52,9 @@ namespace gr {
     void sink_impl::run_server(){
        std::string server_address("0.0.0.0:50051");
 
-        DataStreamerImpl service(this);
+        RadioImpl service(this);
 
-        // Wait for the server to shutdown. Note that some other thread must be
+        // Wait for the server to shutdown. Note that some other thread must bemessage
         // responsible for shutting down the server for this call to ever return.
         ServerBuilder builder;
         // Listen on the given address without any authentication mechanism.
@@ -84,13 +83,11 @@ namespace gr {
               gr::io_signature::make(1, 1, sizeof(float)),
               gr::io_signature::make(0, 0, 0))
     {
-        std::cout << "Server construct 1" << std::endl;
         server_thread = new boost::thread(boost::bind(&sink_impl::run_server, this));
-        std::cout << "Server construct 2" << std::endl;
     }
 
     /*
-     * Our virtual destructor.
+     * Our destructor
      */
     sink_impl::~sink_impl()
     {
@@ -111,9 +108,9 @@ namespace gr {
         const float *in = (const float *) input_items[0];
         for (int i = 0; i < noutput_items; i++){
             if (server_writer != nullptr){
-                Reply reply;
-                std::cout << "Writing to GRPC" << std::endl;
-                reply.set_message(in[i]);
+                radio_rpc::Float reply;
+//                 std::cout << "Writing to GRPC" << std::endl;
+                reply.set__float(in[i]);
                 server_writer->Write(reply);
             }
         }

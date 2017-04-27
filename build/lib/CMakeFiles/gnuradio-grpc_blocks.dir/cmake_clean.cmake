@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o"
-  "CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o"
-  "CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o"
+  "CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o"
+  "CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o"
+  "CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o"
   "CMakeFiles/gnuradio-grpc_blocks.dir/sink_impl.cc.o"
   "CMakeFiles/gnuradio-grpc_blocks.dir/source_impl.cc.o"
   "libgnuradio-grpc_blocks-1.0.0git.pdb"

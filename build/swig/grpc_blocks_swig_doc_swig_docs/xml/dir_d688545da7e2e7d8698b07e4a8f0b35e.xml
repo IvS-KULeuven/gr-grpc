@@ -4,6 +4,7 @@
     <compoundname>/home/wimc/project/gr_mods/gr-grpc_blocks/include/grpc_blocks</compoundname>
     <innerfile refid="api_8h">api.h</innerfile>
     <innerfile refid="sink_8h">sink.h</innerfile>
+    <innerfile refid="source_8h">source.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

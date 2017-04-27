@@ -58,7 +58,6 @@ include swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/progress.make
 include swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/flags.make
 
 swig/grpc_blocks_swig_swig_2d0df.cpp: ../swig/grpc_blocks_swig.i
-swig/grpc_blocks_swig_swig_2d0df.cpp: swig/grpc_blocks_swig_doc.i
 swig/grpc_blocks_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/gr_swig_block_magic.i
 swig/grpc_blocks_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/gr_logger.i
 swig/grpc_blocks_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/block_gateway.i
@@ -92,23 +91,14 @@ swig/grpc_blocks_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/block_detail.i
 swig/grpc_blocks_swig_swig_2d0df.cpp: swig/grpc_blocks_swig.tag
 	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig && /usr/bin/cmake -E copy /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig/grpc_blocks_swig_swig_2d0df.cpp.in /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig/grpc_blocks_swig_swig_2d0df.cpp
 
-swig/grpc_blocks_swig_doc.i: swig/grpc_blocks_swig_doc_swig_docs/xml/index.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating python docstrings for grpc_blocks_swig_doc"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/docs/doxygen && /usr/bin/python2 -B /home/wimc/project/gr_mods/gr-grpc_blocks/docs/doxygen/swig_doc.py /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig/grpc_blocks_swig_doc_swig_docs/xml /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig/grpc_blocks_swig_doc.i
-
 swig/grpc_blocks_swig.tag: swig/_grpc_blocks_swig_swig_tag
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating grpc_blocks_swig.tag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating grpc_blocks_swig.tag"
 	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig && ./_grpc_blocks_swig_swig_tag
 	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig && /usr/bin/cmake -E touch /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig/grpc_blocks_swig.tag
 
-swig/grpc_blocks_swig_doc_swig_docs/xml/index.xml: swig/_grpc_blocks_swig_doc_tag
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating doxygen xml for grpc_blocks_swig_doc docs"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig && ./_grpc_blocks_swig_doc_tag
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig && /usr/bin/doxygen /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig/grpc_blocks_swig_doc_swig_docs/Doxyfile
-
 swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/grpc_blocks_swig_swig_2d0df.cpp.o: swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/flags.make
 swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/grpc_blocks_swig_swig_2d0df.cpp.o: swig/grpc_blocks_swig_swig_2d0df.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/grpc_blocks_swig_swig_2d0df.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/grpc_blocks_swig_swig_2d0df.cpp.o"
 	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/grpc_blocks_swig_swig_2d0df.cpp.o -c /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig/grpc_blocks_swig_swig_2d0df.cpp
 
 swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/grpc_blocks_swig_swig_2d0df.cpp.i: cmake_force
@@ -140,7 +130,7 @@ grpc_blocks_swig_swig_2d0df_EXTERNAL_OBJECTS =
 swig/grpc_blocks_swig_swig_2d0df: swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/grpc_blocks_swig_swig_2d0df.cpp.o
 swig/grpc_blocks_swig_swig_2d0df: swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/build.make
 swig/grpc_blocks_swig_swig_2d0df: swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable grpc_blocks_swig_swig_2d0df"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable grpc_blocks_swig_swig_2d0df"
 	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig && /usr/bin/cmake -E make_directory /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig
@@ -160,9 +150,7 @@ swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/clean:
 .PHONY : swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/clean
 
 swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/depend: swig/grpc_blocks_swig_swig_2d0df.cpp
-swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/depend: swig/grpc_blocks_swig_doc.i
 swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/depend: swig/grpc_blocks_swig.tag
-swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/depend: swig/grpc_blocks_swig_doc_swig_docs/xml/index.xml
 	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wimc/project/gr_mods/gr-grpc_blocks /home/wimc/project/gr_mods/gr-grpc_blocks/swig /home/wimc/project/gr_mods/gr-grpc_blocks/build /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig /home/wimc/project/gr_mods/gr-grpc_blocks/build/swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : swig/CMakeFiles/grpc_blocks_swig_swig_2d0df.dir/depend
 

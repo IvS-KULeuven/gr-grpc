@@ -3,6 +3,7 @@
   <compounddef id="namespacegr_1_1grpc__blocks" kind="namespace" language="C++">
     <compoundname>gr::grpc_blocks</compoundname>
     <innerclass refid="classgr_1_1grpc__blocks_1_1sink" prot="public">gr::grpc_blocks::sink</innerclass>
+    <innerclass refid="classgr_1_1grpc__blocks_1_1source" prot="public">gr::grpc_blocks::source</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

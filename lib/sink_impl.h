@@ -24,14 +24,14 @@
 #include <grpc_blocks/sink.h>
 #include <boost/thread/thread.hpp>
 #include <grpc++/server.h>
-#include "data_streamer.grpc.pb.h"
-#include "data_streamer.pb.h"
+#include "radio.grpc.pb.h"
+#include "radio.pb.h"
 
 using grpc::ServerWriter;
 using grpc::Server;
 
-using datastreamer::Request;
-using datastreamer::Reply;
+// using radio::Request;
+using radio_rpc::Float;
 
 namespace gr {
   namespace grpc_blocks {
@@ -45,7 +45,7 @@ namespace gr {
      
     public:
       
-      ServerWriter<Reply>* server_writer = nullptr;
+      ServerWriter<Float>* server_writer = nullptr;
       sink_impl();
       ~sink_impl();
 

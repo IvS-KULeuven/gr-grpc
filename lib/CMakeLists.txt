@@ -32,9 +32,9 @@ find_package(Protobuf REQUIRED)
 include_directories(${PROTOBUF_INCLUDE_DIR})
 
 list(APPEND grpc_blocks_sources
-    data_streamer.grpc.pb.cc
-    data_streamer.pb.cc
-    data_streamer.server.cc
+    radio.grpc.pb.cc
+    radio.pb.cc
+    radio.server.cc
     sink_impl.cc
     source_impl.cc
 )

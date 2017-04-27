@@ -57,76 +57,76 @@ include lib/CMakeFiles/gnuradio-grpc_blocks.dir/progress.make
 # Include the compile flags for this target's objects.
 include lib/CMakeFiles/gnuradio-grpc_blocks.dir/flags.make
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o: lib/CMakeFiles/gnuradio-grpc_blocks.dir/flags.make
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o: ../lib/data_streamer.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o -c /home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.cc
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o: lib/CMakeFiles/gnuradio-grpc_blocks.dir/flags.make
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o: ../lib/radio.grpc.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o"
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o -c /home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.grpc.pb.cc
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.i"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.cc > CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.i
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.i"
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.grpc.pb.cc > CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.i
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.s"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.cc -o CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.s
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.s"
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.grpc.pb.cc -o CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.s
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o.requires:
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o.requires:
 
-.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o.requires
+.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o.requires
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o.provides: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o.requires
-	$(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o.provides.build
-.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o.provides
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o.provides: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o.provides
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o.provides.build: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o
-
-
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o: lib/CMakeFiles/gnuradio-grpc_blocks.dir/flags.make
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o: ../lib/data_streamer.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o -c /home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.cc
-
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.i"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.cc > CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.i
-
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.s"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.cc -o CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.s
-
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o.requires:
-
-.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o.requires
-
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o.provides: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o.requires
-	$(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o.provides.build
-.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o.provides
-
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o.provides.build: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o.provides.build: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o
 
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o: lib/CMakeFiles/gnuradio-grpc_blocks.dir/flags.make
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o: ../lib/data_streamer.server.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o -c /home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.server.cc
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o: lib/CMakeFiles/gnuradio-grpc_blocks.dir/flags.make
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o: ../lib/radio.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o"
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o -c /home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.pb.cc
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.i"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.server.cc > CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.i
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.i"
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.pb.cc > CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.i
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.s"
-	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.server.cc -o CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.s
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.s"
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.pb.cc -o CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.s
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o.requires:
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o.requires:
 
-.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o.requires
+.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o.requires
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o.provides: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o.requires
-	$(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o.provides.build
-.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o.provides
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o.provides: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o.provides
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o.provides.build: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o.provides.build: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o
+
+
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o: lib/CMakeFiles/gnuradio-grpc_blocks.dir/flags.make
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o: ../lib/radio.server.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wimc/project/gr_mods/gr-grpc_blocks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o"
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o -c /home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.server.cc
+
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.i"
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.server.cc > CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.i
+
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.s"
+	cd /home/wimc/project/gr_mods/gr-grpc_blocks/build/lib && /usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.server.cc -o CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.s
+
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o.requires
+
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o.provides: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o.provides
+
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o.provides.build: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o
 
 
 lib/CMakeFiles/gnuradio-grpc_blocks.dir/sink_impl.cc.o: lib/CMakeFiles/gnuradio-grpc_blocks.dir/flags.make
@@ -179,18 +179,18 @@ lib/CMakeFiles/gnuradio-grpc_blocks.dir/source_impl.cc.o.provides.build: lib/CMa
 
 # Object files for target gnuradio-grpc_blocks
 gnuradio__grpc_blocks_OBJECTS = \
-"CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o" \
-"CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o" \
-"CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o" \
+"CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o" \
+"CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o" \
+"CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o" \
 "CMakeFiles/gnuradio-grpc_blocks.dir/sink_impl.cc.o" \
 "CMakeFiles/gnuradio-grpc_blocks.dir/source_impl.cc.o"
 
 # External object files for target gnuradio-grpc_blocks
 gnuradio__grpc_blocks_EXTERNAL_OBJECTS =
 
-lib/libgnuradio-grpc_blocks-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o
-lib/libgnuradio-grpc_blocks-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o
-lib/libgnuradio-grpc_blocks-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o
+lib/libgnuradio-grpc_blocks-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o
+lib/libgnuradio-grpc_blocks-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o
+lib/libgnuradio-grpc_blocks-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o
 lib/libgnuradio-grpc_blocks-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-grpc_blocks.dir/sink_impl.cc.o
 lib/libgnuradio-grpc_blocks-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-grpc_blocks.dir/source_impl.cc.o
 lib/libgnuradio-grpc_blocks-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-grpc_blocks.dir/build.make
@@ -215,9 +215,9 @@ lib/CMakeFiles/gnuradio-grpc_blocks.dir/build: lib/libgnuradio-grpc_blocks-1.0.0
 
 .PHONY : lib/CMakeFiles/gnuradio-grpc_blocks.dir/build
 
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/requires: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o.requires
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/requires: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o.requires
-lib/CMakeFiles/gnuradio-grpc_blocks.dir/requires: lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o.requires
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/requires: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o.requires
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/requires: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o.requires
+lib/CMakeFiles/gnuradio-grpc_blocks.dir/requires: lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o.requires
 lib/CMakeFiles/gnuradio-grpc_blocks.dir/requires: lib/CMakeFiles/gnuradio-grpc_blocks.dir/sink_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-grpc_blocks.dir/requires: lib/CMakeFiles/gnuradio-grpc_blocks.dir/source_impl.cc.o.requires
 

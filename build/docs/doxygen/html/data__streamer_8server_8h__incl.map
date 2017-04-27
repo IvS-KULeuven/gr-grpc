@@ -1,7 +1,0 @@
-<map id="data_streamer.server.h" name="data_streamer.server.h">
-<area shape="rect" id="node2" href="$sink__impl_8h.html" title="sink_impl.h" alt="" coords="1143,80,1231,107"/>
-<area shape="rect" id="node9" href="$data__streamer_8grpc_8pb_8h.html" title="data_streamer.grpc.pb.h" alt="" coords="1573,155,1735,181"/>
-<area shape="rect" id="node10" href="$data__streamer_8pb_8h.html" title="data_streamer.pb.h" alt="" coords="1087,237,1221,263"/>
-<area shape="rect" id="node3" href="$sink_8h.html" title="grpc_blocks/sink.h" alt="" coords="947,155,1078,181"/>
-<area shape="rect" id="node4" href="$api_8h.html" title="grpc_blocks/api.h" alt="" coords="939,237,1063,263"/>
-</map>

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.grpc.pb.cc" "/home/wimc/project/gr_mods/gr-grpc_blocks/build/lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.grpc.pb.cc.o"
-  "/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.pb.cc" "/home/wimc/project/gr_mods/gr-grpc_blocks/build/lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.pb.cc.o"
-  "/home/wimc/project/gr_mods/gr-grpc_blocks/lib/data_streamer.server.cc" "/home/wimc/project/gr_mods/gr-grpc_blocks/build/lib/CMakeFiles/gnuradio-grpc_blocks.dir/data_streamer.server.cc.o"
+  "/home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.grpc.pb.cc" "/home/wimc/project/gr_mods/gr-grpc_blocks/build/lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.grpc.pb.cc.o"
+  "/home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.pb.cc" "/home/wimc/project/gr_mods/gr-grpc_blocks/build/lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.pb.cc.o"
+  "/home/wimc/project/gr_mods/gr-grpc_blocks/lib/radio.server.cc" "/home/wimc/project/gr_mods/gr-grpc_blocks/build/lib/CMakeFiles/gnuradio-grpc_blocks.dir/radio.server.cc.o"
   "/home/wimc/project/gr_mods/gr-grpc_blocks/lib/sink_impl.cc" "/home/wimc/project/gr_mods/gr-grpc_blocks/build/lib/CMakeFiles/gnuradio-grpc_blocks.dir/sink_impl.cc.o"
   "/home/wimc/project/gr_mods/gr-grpc_blocks/lib/source_impl.cc" "/home/wimc/project/gr_mods/gr-grpc_blocks/build/lib/CMakeFiles/gnuradio-grpc_blocks.dir/source_impl.cc.o"
   )
