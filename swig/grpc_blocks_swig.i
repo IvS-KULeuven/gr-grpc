@@ -8,12 +8,15 @@
 %include "grpc_blocks_swig_doc.i"
 
 %{
-#include "grpc_blocks/sink.h"
-#include "grpc_blocks/source.h"
+#include "grpc_blocks/grpc_server_sink.h"
+#include "grpc_blocks/grpc_client_source.h"
+#include "grpc_blocks/grpc_client_sink.h"
 %}
 
 
-%include "grpc_blocks/sink.h"
-GR_SWIG_BLOCK_MAGIC2(grpc_blocks, sink);
-%include "grpc_blocks/source.h"
-GR_SWIG_BLOCK_MAGIC2(grpc_blocks, source);
+%include "grpc_blocks/grpc_server_sink.h"
+GR_SWIG_BLOCK_MAGIC2(grpc_blocks, grpc_server_sink);
+%include "grpc_blocks/grpc_client_sink.h"
+GR_SWIG_BLOCK_MAGIC2(grpc_blocks, grpc_client_sink);
+%include "grpc_blocks/grpc_client_source.h"
+GR_SWIG_BLOCK_MAGIC2(grpc_blocks, grpc_client_source);

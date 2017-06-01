@@ -32,11 +32,11 @@ find_package(Protobuf REQUIRED)
 include_directories(${PROTOBUF_INCLUDE_DIR})
 
 list(APPEND grpc_blocks_sources
-    radio.grpc.pb.cc
-    radio.pb.cc
-    radio.server.cc
-    sink_impl.cc
-    source_impl.cc
+    grgrpc.pb.cc
+    grgrpc.grpc.pb.cc
+    grpc_client_sink_impl.cc
+    grpc_client_source_impl.cc
+    grpc_server_sink_impl.cc
 )
 
 set(grpc_blocks_sources "${grpc_blocks_sources}" PARENT_SCOPE)

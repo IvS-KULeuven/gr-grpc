@@ -35,18 +35,20 @@ class qa_sink (gr_unittest.TestCase):
 
     def test_001_t (self):
         # set up fg
-        src_data = (-3, 4, -5.5, 2, 3)
-        src = blocks.vector_source_f(src_data)
-        mysink = grpc_server_sink(gr.sizeof_float, "")
-        print("grpc started")
+        print("create grpc client source")
+        mysource = grpc_client_source(gr.sizeof_float, "")
+        sleep(1)
+        dst = blocks.vector_sink_f()
+        self.tb.connect(mysource, dst)
+        print("start tb client")
+        self.tb.start ()
         sleep(10)
-        self.tb.connect(src, mysink)
-        print("start tb")
-        self.tb.start()
-        sleep(20)
-        print("stop tb")
+        print(dst.data())
+        print("stop tb client")
         self.tb.stop()
         #self.tb.wait()
+        print(dst.data())
+
         # check data
 
 

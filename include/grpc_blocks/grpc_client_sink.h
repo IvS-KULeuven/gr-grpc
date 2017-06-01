@@ -19,8 +19,8 @@
  */
 
 
-#ifndef INCLUDED_GRPC_BLOCKS_SINK_H
-#define INCLUDED_GRPC_BLOCKS_SINK_H
+#ifndef INCLUDED_GRPC_BLOCKS_CLIENT_SINK_H
+#define INCLUDED_GRPC_BLOCKS_CLIENT_SINK_H
 
 #include <grpc_blocks/api.h>
 #include <gnuradio/sync_block.h>
@@ -33,24 +33,24 @@ namespace gr {
      * \ingroup grpc_blocks
      *
      */
-    class GRPC_BLOCKS_API sink : virtual public gr::sync_block
+    class GRPC_BLOCKS_API grpc_client_sink : virtual public gr::sync_block
     {
      public:
-      typedef boost::shared_ptr<sink> sptr;
+      typedef boost::shared_ptr<grpc_client_sink> sptr;
 
       /*!
-       * \brief Return a shared_ptr to a new instance of grpc_blocks::sink.
+       * \brief Return a shared_ptr to a new instance of grpc_blocks::source.
        *
-       * To avoid accidental use of raw pointers, grpc_blocks::sink's
+       * To avoid accidental use of raw pointers, grpc_blocks::source's
        * constructor is in a private implementation
-       * class. grpc_blocks::sink::make is the public interface for
+       * class. grpc_blocks::source::make is the public interface for
        * creating new instances.
        */
-      static sptr make();
+      static sptr make(size_t itemsize, char *address);
     };
 
   } // namespace grpc_blocks
 } // namespace gr
 
-#endif /* INCLUDED_GRPC_BLOCKS_SINK_H */
+#endif /* INCLUDED_GRPC_BLOCKS_SOURCE_H */
 

@@ -1,0 +1,41 @@
+syntax="proto3";
+
+package grgrpc;
+
+service GNURadioLink {
+    rpc PublishData(stream GRData) returns (stream StatusData) {};
+    rpc RequestData(stream StatusData) returns (stream GRData) {};
+}
+
+message Empty {}
+
+
+message StatusData {
+    string code = 1;
+    
+}
+
+message GRData {
+    repeated bytes m_byte = 1;
+    string code = 2;
+    enum Type {
+        REQUEST = 0;
+        PUBLISH = 1;
+    }
+    Type type = 3;
+}
+
+message Bool {
+    bool boolean = 1;
+}
+
+message Float {
+    float _float = 1;
+}
+
+message Parameters{
+// TODO fill in
+    float frequency = 1;
+    float gain = 2;
+    int32 sample_rate = 3;
+}

@@ -21,25 +21,33 @@
 #ifndef INCLUDED_GRPC_BLOCKS_SOURCE_IMPL_H
 #define INCLUDED_GRPC_BLOCKS_SOURCE_IMPL_H
 
-#include <grpc_blocks/source.h>
+#include <grpc_blocks/grpc_client_source.h>
 #include <grpc++/grpc++.h>
-#include "data_streamer.pb.h"
+#include "grgrpc.grpc.pb.h"
 
-using grpc::ClientReader;
+using grpc::ClientReaderWriter;
+using grpc::Status;
+using grgrpc::GRData;
+using grgrpc::StatusData;
+using grgrpc::Empty;
+using grgrpc::GNURadioLink;
 
-using namespace datastreamer;
+using namespace grgrpc;
 
 namespace gr {
   namespace grpc_blocks {
 
-    class source_impl : public source
+    class grpc_client_source_impl : public grpc_client_source
     {
      private:
-      std::unique_ptr<ClientReader<Reply> > reader_;
+      std::unique_ptr<ClientReaderWriter<StatusData, GRData> > client_reader_writer_;
+      std::unique_ptr<GNURadioLink::Stub> stub_;
+      char *address_;
+      size_t itemsize_;
 
      public:
-      source_impl();
-      ~source_impl();
+      grpc_client_source_impl(size_t itemsize, char *address);
+      ~grpc_client_source_impl();
 
       // Where all the action really happens
       int work(int noutput_items,
@@ -51,4 +59,5 @@ namespace gr {
 } // namespace gr
 
 #endif /* INCLUDED_GRPC_BLOCKS_SOURCE_IMPL_H */
+
 

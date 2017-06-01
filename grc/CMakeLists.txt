@@ -19,5 +19,6 @@
 
 install(FILES
     grpc_blocks_sink.xml
+    grpc_blocks_client_sink.xml
     grpc_blocks_source.xml DESTINATION share/gnuradio/grc/blocks
 )

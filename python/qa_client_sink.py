@@ -23,6 +23,7 @@ from gnuradio import gr, gr_unittest
 from gnuradio import blocks
 from grpc_blocks_swig import grpc_server_sink
 from grpc_blocks_swig import grpc_client_source
+from grpc_blocks_swig import grpc_client_sink
 from time import sleep
 
 class qa_sink (gr_unittest.TestCase):
@@ -34,19 +35,20 @@ class qa_sink (gr_unittest.TestCase):
         self.tb = None
 
     def test_001_t (self):
-        # set up fg
         src_data = (-3, 4, -5.5, 2, 3)
         src = blocks.vector_source_f(src_data)
-        mysink = grpc_server_sink(gr.sizeof_float, "")
-        print("grpc started")
-        sleep(10)
+
+        print("create grpc client source")
+        mysink = grpc_client_sink(gr.sizeof_float, "")
         self.tb.connect(src, mysink)
-        print("start tb")
-        self.tb.start()
-        sleep(20)
-        print("stop tb")
+        sleep(1)
+
+        print("start tb client")
+        self.tb.start ()
+        sleep(10)
         self.tb.stop()
         #self.tb.wait()
+
         # check data
 
 

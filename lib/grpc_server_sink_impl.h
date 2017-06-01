@@ -21,38 +21,49 @@
 #ifndef INCLUDED_GRPC_BLOCKS_SINK_IMPL_H
 #define INCLUDED_GRPC_BLOCKS_SINK_IMPL_H
 
-#include <grpc_blocks/sink.h>
+#include <grpc_blocks/grpc_server_sink.h>
 #include <boost/thread/thread.hpp>
-#include <grpc++/server.h>
-#include "radio.grpc.pb.h"
-#include "radio.pb.h"
+#include <grpc++/grpc++.h>
 
-using grpc::ServerWriter;
+#include "grgrpc.grpc.pb.h"
+
+using grpc::ServerReaderWriter;
 using grpc::Server;
 
 // using radio::Request;
-using radio_rpc::Float;
+
+using grgrpc::GRData;
+using grgrpc::Empty;
+using grgrpc::GNURadioLink;
 
 namespace gr {
   namespace grpc_blocks {
 
-    class sink_impl : public sink
+    class grpc_server_sink_impl : public grpc_server_sink
     {
      private:
       boost::thread* server_thread;
       std::unique_ptr<Server> server_;
+
       void run_server();
+      char *address_;
+      size_t itemsize_;
      
     public:
       
-      ServerWriter<Float>* server_writer = nullptr;
-      sink_impl();
-      ~sink_impl();
+      //ServerWriter<GRData>* server_writer = nullptr;
+      grpc_server_sink_impl(size_t itemsize, char *address);
+      ~grpc_server_sink_impl();
 
       // Where all the action really happens
       int work(int noutput_items,
          gr_vector_const_void_star &input_items,
          gr_vector_void_star &output_items);
+      
+      std::condition_variable cv;
+      std::mutex m;
+      bool is_ready;
+      ServerReaderWriter<GRData,GRData>* server_reader_writer = nullptr;
     };
 
   } // namespace grpc_blocks

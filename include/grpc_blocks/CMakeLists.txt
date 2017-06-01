@@ -22,6 +22,7 @@
 ########################################################################
 install(FILES
     api.h
-    sink.h
-    source.h DESTINATION include/grpc_blocks
+    grpc_client_sink.h
+    grpc_client_source.h
+    grpc_server_sink.h DESTINATION include/grpc_blocks
 )
