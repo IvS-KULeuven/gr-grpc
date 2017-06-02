@@ -18,7 +18,6 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    grpc_blocks_sink.xml
     grpc_blocks_client_sink.xml
-    grpc_blocks_source.xml DESTINATION share/gnuradio/grc/blocks
+    grpc_blocks_client_source.xml DESTINATION share/gnuradio/grc/blocks
 )
