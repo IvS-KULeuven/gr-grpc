@@ -54,28 +54,29 @@ namespace grpc_blocks
 {
 
 grpc_client_source::sptr
-grpc_client_source::make ( size_t itemsize, char *address )
+grpc_client_source::make ( size_t itemsize, char *address, char *code )
 {
   return gnuradio::get_initial_sptr
-         ( new grpc_client_source_impl ( itemsize, address ) );
+         ( new grpc_client_source_impl ( itemsize, address, code ) );
 }
 
 
 /*
  * The private constructor
  */
-grpc_client_source_impl::grpc_client_source_impl ( size_t itemsize, char *address )
+grpc_client_source_impl::grpc_client_source_impl ( size_t itemsize, char *address , char *code)
   : gr::sync_block ( "grpc_client_source",
                      gr::io_signature::make ( 0, 0, 0 ),
                      gr::io_signature::make ( 1, 1, itemsize ) )
 
 {
   itemsize_ = itemsize;
+  code_ = code;
   stub_ = GNURadioLink::NewStub ( grpc::CreateChannel ( "localhost:50051", grpc::InsecureChannelCredentials() ) );
 
   client_reader_writer_ = stub_->RequestData ( new ClientContext() );
   StatusData init;
-  init.set_code("test");
+  init.set_code(code_);
   client_reader_writer_->Write(init);
 }
 

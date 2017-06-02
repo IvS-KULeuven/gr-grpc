@@ -46,7 +46,7 @@ namespace gr {
        * class. grpc_blocks::source::make is the public interface for
        * creating new instances.
        */
-      static sptr make(size_t itemsize, char *address);
+      static sptr make(size_t itemsize, char *address, char *code);
     };
 
   } // namespace grpc_blocks

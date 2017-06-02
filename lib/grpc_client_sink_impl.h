@@ -43,10 +43,11 @@ namespace gr {
       std::unique_ptr<ClientReaderWriter<GRData, StatusData> > client_reader_writer_;
       std::unique_ptr<GNURadioLink::Stub> stub_;
       char *address_;
+      char *code_;
       size_t itemsize_;
 
      public:
-      grpc_client_sink_impl(size_t itemsize, char *address);
+      grpc_client_sink_impl(size_t itemsize, char *address, char *code);
       ~grpc_client_sink_impl();
 
       // Where all the action really happens

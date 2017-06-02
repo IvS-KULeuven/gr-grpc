@@ -24,5 +24,5 @@ install(FILES
     api.h
     grpc_client_sink.h
     grpc_client_source.h
-    grpc_server_sink.h DESTINATION include/grpc_blocks
+    DESTINATION include/grpc_blocks
 )

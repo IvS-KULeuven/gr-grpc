@@ -54,31 +54,32 @@ namespace grpc_blocks
 {
 
 grpc_client_sink::sptr
-grpc_client_sink::make ( size_t itemsize, char *address )
+grpc_client_sink::make ( size_t itemsize, char *address, char *code )
 {
   return gnuradio::get_initial_sptr
-         ( new grpc_client_sink_impl ( itemsize, address ) );
+         ( new grpc_client_sink_impl ( itemsize, address, code ) );
 }
 
 
 /*
  * The private constructor
  */
-grpc_client_sink_impl::grpc_client_sink_impl ( size_t itemsize, char *address )
+grpc_client_sink_impl::grpc_client_sink_impl ( size_t itemsize, char *address, char *code )
   : gr::sync_block ( "grpc_client_sink",
                      gr::io_signature::make ( 1, 1, itemsize ),
                      gr::io_signature::make ( 0, 0, 0 ) )
 
 {
   itemsize_ = itemsize;
-  stub_ = GNURadioLink::NewStub ( grpc::CreateChannel ( "localhost:50051", grpc::InsecureChannelCredentials() ) );
+  code_ = code;
+  stub_ = GNURadioLink::NewStub ( grpc::CreateChannel ( address, grpc::InsecureChannelCredentials() ) );
 
 
 
   client_reader_writer_ = stub_->PublishData( new ClientContext() );
   GRData init;
   init.set_type ( GRData::PUBLISH );
-  init.set_code ( "test" );
+  init.set_code ( code_ );
   client_reader_writer_->Write ( init );
 }
 
@@ -101,27 +102,14 @@ grpc_client_sink_impl::work ( int noutput_items,
       for ( int i = 0; i < noutput_items; i++ )
         {
           reply.add_m_byte ( ( uint8_t* ) ( ( uint8_t* ) input_items[0] + ( i * itemsize_ ) ), itemsize_ );
-
-        
         }
+        
+      client_reader_writer_->Write ( reply );
     }
     
-    client_reader_writer_->Write ( reply );
+
   
   return noutput_items;
-  
-   /* if ( client_reader_writer_ != nullptr )
-        {
-          GRData reply;
-          reply.set_m_byte ( ( uint8_t* ) ( ( uint8_t* ) input_items[0] ), itemsize_ );
-          client_reader_writer_->Write ( reply );
-        }
-        
-        return 1;
-        */
-
-
-
 }
 
 } /* namespace grpc_blocks */

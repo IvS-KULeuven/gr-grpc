@@ -4,7 +4,7 @@
   <key>grpc_blocks_client_sink</key>
   <category>[grpc_blocks]</category>
   <import>from grpc_blocks_swig import grpc_client_sink</import>
-  <make>grpc_client_sink($type.itemsize, $address)</make>
+  <make>grpc_client_sink($type.itemsize, $address, $code)</make>
   
   <param>
     <name>IO Type</name>
@@ -41,6 +41,14 @@
   <param>
     <name>Address</name>
     <key>address</key>
+    <value>localhost:50051</value>
+    <type>string</type>
+  </param>
+  
+  <param>
+    <name>Code</name>
+    <key>code</key>
+    <value>foo</value>
     <type>string</type>
   </param>
   
