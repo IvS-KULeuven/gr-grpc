@@ -28,14 +28,24 @@ link_directories(${Boost_LIBRARY_DIRS})
 pkg_search_module(GRPC REQUIRE grpc++ )
 
 include(FindProtobuf)
-find_package(Protobuf REQUIRED)
-include_directories(${PROTOBUF_INCLUDE_DIR})
+
+add_custom_command(
+		OUTPUT protos/grgrpc.grpc.pb.cc
+		COMMAND protoc
+		ARGS -I ${CMAKE_CURRENT_SOURCE_DIR} --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` ${CMAKE_CURRENT_SOURCE_DIR}/protos/grgrpc.proto
+)
+#
+add_custom_command(
+		OUTPUT protos/grgrpc.pb.cc
+		COMMAND protoc
+		ARGS -I ${CMAKE_CURRENT_SOURCE_DIR} --cpp_out=. ${CMAKE_CURRENT_SOURCE_DIR}/protos/grgrpc.proto
+)
 
 list(APPEND grpc_blocks_sources
-    grgrpc.pb.cc
-    grgrpc.grpc.pb.cc
-    grpc_client_sink_impl.cc
-    grpc_client_source_impl.cc
+		${CMAKE_CURRENT_BINARY_DIR}/protos/grgrpc.pb.cc
+		${CMAKE_CURRENT_BINARY_DIR}/protos/grgrpc.grpc.pb.cc
+	 	grpc_client_sink_impl.cc
+	 	grpc_client_source_impl.cc
 )
 
 set(grpc_blocks_sources "${grpc_blocks_sources}" PARENT_SCOPE)
