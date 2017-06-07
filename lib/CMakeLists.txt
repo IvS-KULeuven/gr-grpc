@@ -41,6 +41,8 @@ add_custom_command(
 		ARGS -I ${CMAKE_CURRENT_SOURCE_DIR} --cpp_out=. ${CMAKE_CURRENT_SOURCE_DIR}/protos/grgrpc.proto
 )
 
+include_directories("${CMAKE_CURRENT_BINARY_DIR}/protos")
+
 list(APPEND grpc_blocks_sources
 		${CMAKE_CURRENT_BINARY_DIR}/protos/grgrpc.pb.cc
 		${CMAKE_CURRENT_BINARY_DIR}/protos/grgrpc.grpc.pb.cc
