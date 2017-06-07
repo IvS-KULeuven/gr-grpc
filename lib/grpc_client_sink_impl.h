@@ -29,7 +29,6 @@ using grpc::ClientReaderWriter;
 using grpc::Status;
 using grgrpc::GRData;
 using grgrpc::StatusData;
-using grgrpc::Empty;
 using grgrpc::GNURadioLink;
 
 using namespace grgrpc;

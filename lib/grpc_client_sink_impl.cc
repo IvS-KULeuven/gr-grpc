@@ -35,17 +35,11 @@ using grpc::ClientContext;
 using grpc::Status;
 using grpc::ClientReader;
 
-using grpc::Server;
-using grpc::ServerBuilder;
-using grpc::ServerContext;
-using grpc::ServerWriter;
-using grpc::ServerReader;
-using grpc::ServerReaderWriter;
 using grpc::Status;
 using grgrpc::GRData;
 using grgrpc::Empty;
 using grgrpc::GNURadioLink;
-
+using grgrpc::Tag;
 using namespace grgrpc;
 
 namespace gr
@@ -76,7 +70,7 @@ grpc_client_sink_impl::grpc_client_sink_impl ( size_t itemsize, char *address, c
 
 
 
-  client_reader_writer_ = stub_->PublishData( new ClientContext() );
+  client_reader_writer_ = stub_->PublishData ( new ClientContext() );
   GRData init;
   init.set_type ( GRData::PUBLISH );
   init.set_code ( code_ );
@@ -88,7 +82,8 @@ grpc_client_sink_impl::grpc_client_sink_impl ( size_t itemsize, char *address, c
  */
 grpc_client_sink_impl::~grpc_client_sink_impl()
 {
-  //Status status = reader_->Finish();
+
+
 }
 
 int
@@ -103,12 +98,24 @@ grpc_client_sink_impl::work ( int noutput_items,
         {
           reply.add_m_byte ( ( uint8_t* ) ( ( uint8_t* ) input_items[0] + ( i * itemsize_ ) ), itemsize_ );
         }
-        
+      std::vector<gr::tag_t> tags;
+      get_tags_in_range ( tags, 0, nitems_read ( 0 ), nitems_read ( 0 ) + noutput_items );
+      for ( size_t i=0; i<tags.size(); i++ )
+        {
+          gr::tag_t t = tags[i];
+          grgrpc::Tag* mytag = reply.add_tag();;
+          mytag->set_offset ( t.offset - nitems_read ( 0 ) );
+          mytag->set_key ( pmt::serialize_str ( t.key ) );
+          mytag->set_value ( pmt::serialize_str ( t.value ) );
+          mytag->set_srcid ( pmt::serialize_str ( t.srcid ) );
+
+        }
+
       client_reader_writer_->Write ( reply );
     }
-    
 
-  
+
+
   return noutput_items;
 }
 

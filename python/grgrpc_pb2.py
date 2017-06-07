@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='grgrpc.proto',
   package='grgrpc',
   syntax='proto3',
-  serialized_pb=_b('\n\x0cgrgrpc.proto\x12\x06grgrpc\"\x07\n\x05\x45mpty\"\x1a\n\nStatusData\x12\x0c\n\x04\x63ode\x18\x01 \x01(\t\"k\n\x06GRData\x12\x0e\n\x06m_byte\x18\x01 \x03(\x0c\x12\x0c\n\x04\x63ode\x18\x02 \x01(\t\x12!\n\x04type\x18\x03 \x01(\x0e\x32\x13.grgrpc.GRData.Type\" \n\x04Type\x12\x0b\n\x07REQUEST\x10\x00\x12\x0b\n\x07PUBLISH\x10\x01\"\x17\n\x04\x42ool\x12\x0f\n\x07\x62oolean\x18\x01 \x01(\x08\"\x17\n\x05\x46loat\x12\x0e\n\x06_float\x18\x01 \x01(\x02\"B\n\nParameters\x12\x11\n\tfrequency\x18\x01 \x01(\x02\x12\x0c\n\x04gain\x18\x02 \x01(\x02\x12\x13\n\x0bsample_rate\x18\x03 \x01(\x05\x32\x80\x01\n\x0cGNURadioLink\x12\x37\n\x0bPublishData\x12\x0e.grgrpc.GRData\x1a\x12.grgrpc.StatusData\"\x00(\x01\x30\x01\x12\x37\n\x0bRequestData\x12\x12.grgrpc.StatusData\x1a\x0e.grgrpc.GRData\"\x00(\x01\x30\x01\x62\x06proto3')
+  serialized_pb=_b('\n\x0cgrgrpc.proto\x12\x06grgrpc\"\x07\n\x05\x45mpty\"\x1a\n\nStatusData\x12\x0c\n\x04\x63ode\x18\x01 \x01(\t\"\x85\x01\n\x06GRData\x12\x0e\n\x06m_byte\x18\x01 \x03(\x0c\x12\x0c\n\x04\x63ode\x18\x02 \x01(\t\x12!\n\x04type\x18\x03 \x01(\x0e\x32\x13.grgrpc.GRData.Type\x12\x18\n\x03tag\x18\x04 \x03(\x0b\x32\x0b.grgrpc.Tag\" \n\x04Type\x12\x0b\n\x07REQUEST\x10\x00\x12\x0b\n\x07PUBLISH\x10\x01\"\x17\n\x04\x42ool\x12\x0f\n\x07\x62oolean\x18\x01 \x01(\x08\"\x17\n\x05\x46loat\x12\x0e\n\x06_float\x18\x01 \x01(\x02\"B\n\nParameters\x12\x11\n\tfrequency\x18\x01 \x01(\x02\x12\x0c\n\x04gain\x18\x02 \x01(\x02\x12\x13\n\x0bsample_rate\x18\x03 \x01(\x05\"@\n\x03Tag\x12\x0e\n\x06offset\x18\x01 \x01(\x04\x12\x0b\n\x03key\x18\x02 \x01(\t\x12\r\n\x05value\x18\x03 \x01(\t\x12\r\n\x05srcid\x18\x04 \x01(\t2\x80\x01\n\x0cGNURadioLink\x12\x37\n\x0bPublishData\x12\x0e.grgrpc.GRData\x1a\x12.grgrpc.StatusData\"\x00(\x01\x30\x01\x12\x37\n\x0bRequestData\x12\x12.grgrpc.StatusData\x1a\x0e.grgrpc.GRData\"\x00(\x01\x30\x01\x62\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -42,8 +42,8 @@ _GRDATA_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=136,
-  serialized_end=168,
+  serialized_start=163,
+  serialized_end=195,
 )
 _sym_db.RegisterEnumDescriptor(_GRDATA_TYPE)
 
@@ -131,6 +131,13 @@ _GRDATA = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='tag', full_name='grgrpc.GRData.tag', index=3,
+      number=4, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -144,8 +151,8 @@ _GRDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=61,
-  serialized_end=168,
+  serialized_start=62,
+  serialized_end=195,
 )
 
 
@@ -175,8 +182,8 @@ _BOOL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=170,
-  serialized_end=193,
+  serialized_start=197,
+  serialized_end=220,
 )
 
 
@@ -206,8 +213,8 @@ _FLOAT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=195,
-  serialized_end=218,
+  serialized_start=222,
+  serialized_end=245,
 )
 
 
@@ -251,11 +258,64 @@ _PARAMETERS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=220,
-  serialized_end=286,
+  serialized_start=247,
+  serialized_end=313,
+)
+
+
+_TAG = _descriptor.Descriptor(
+  name='Tag',
+  full_name='grgrpc.Tag',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='offset', full_name='grgrpc.Tag.offset', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='key', full_name='grgrpc.Tag.key', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='grgrpc.Tag.value', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='srcid', full_name='grgrpc.Tag.srcid', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=315,
+  serialized_end=379,
 )
 
 _GRDATA.fields_by_name['type'].enum_type = _GRDATA_TYPE
+_GRDATA.fields_by_name['tag'].message_type = _TAG
 _GRDATA_TYPE.containing_type = _GRDATA
 DESCRIPTOR.message_types_by_name['Empty'] = _EMPTY
 DESCRIPTOR.message_types_by_name['StatusData'] = _STATUSDATA
@@ -263,6 +323,7 @@ DESCRIPTOR.message_types_by_name['GRData'] = _GRDATA
 DESCRIPTOR.message_types_by_name['Bool'] = _BOOL
 DESCRIPTOR.message_types_by_name['Float'] = _FLOAT
 DESCRIPTOR.message_types_by_name['Parameters'] = _PARAMETERS
+DESCRIPTOR.message_types_by_name['Tag'] = _TAG
 
 Empty = _reflection.GeneratedProtocolMessageType('Empty', (_message.Message,), dict(
   DESCRIPTOR = _EMPTY,
@@ -305,6 +366,13 @@ Parameters = _reflection.GeneratedProtocolMessageType('Parameters', (_message.Me
   # @@protoc_insertion_point(class_scope:grgrpc.Parameters)
   ))
 _sym_db.RegisterMessage(Parameters)
+
+Tag = _reflection.GeneratedProtocolMessageType('Tag', (_message.Message,), dict(
+  DESCRIPTOR = _TAG,
+  __module__ = 'grgrpc_pb2'
+  # @@protoc_insertion_point(class_scope:grgrpc.Tag)
+  ))
+_sym_db.RegisterMessage(Tag)
 
 
 try:

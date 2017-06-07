@@ -45,6 +45,7 @@ namespace gr {
       char *address_;
       char *code_;
       size_t itemsize_;
+      uint64_t items_produced_;
 
      public:
       grpc_client_source_impl(size_t itemsize, char *address, char *code);

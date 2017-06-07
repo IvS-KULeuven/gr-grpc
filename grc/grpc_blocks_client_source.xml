@@ -36,15 +36,12 @@
       <opt>itemsize:gr.sizeof_char</opt>
     </option>
   </param>
-
-  
   <param>
     <name>Address</name>
     <key>address</key>
     <value>localhost:50051</value>
     <type>string</type>
   </param>
-  
   <param>
     <name>Code</name>
     <key>code</key>

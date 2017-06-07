@@ -23,6 +23,8 @@ message GRData {
         PUBLISH = 1;
     }
     Type type = 3;
+    
+    repeated Tag tag = 4;
 }
 
 message Bool {
@@ -38,4 +40,11 @@ message Parameters{
     float frequency = 1;
     float gain = 2;
     int32 sample_rate = 3;
+}
+
+message Tag {
+    uint64 offset = 1;
+    string key = 2;
+    string value = 3;
+    string srcid = 4;
 }

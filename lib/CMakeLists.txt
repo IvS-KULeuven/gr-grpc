@@ -36,7 +36,6 @@ list(APPEND grpc_blocks_sources
     grgrpc.grpc.pb.cc
     grpc_client_sink_impl.cc
     grpc_client_source_impl.cc
-    #grpc_server_sink_impl.cc
 )
 
 set(grpc_blocks_sources "${grpc_blocks_sources}" PARENT_SCOPE)

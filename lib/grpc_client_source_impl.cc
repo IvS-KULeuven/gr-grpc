@@ -23,6 +23,10 @@
 #endif
 
 #include <gnuradio/io_signature.h>
+#include <gnuradio/tags.h>
+#include <gnuradio/sync_block.h>
+#include <gnuradio/block.h>
+
 #include <iostream>
 #include <memory>
 #include <string>
@@ -33,15 +37,7 @@
 using grpc::Channel;
 using grpc::ClientContext;
 using grpc::Status;
-using grpc::ClientReader;
 
-using grpc::Server;
-using grpc::ServerBuilder;
-using grpc::ServerContext;
-using grpc::ServerWriter;
-using grpc::ServerReader;
-using grpc::ServerReaderWriter;
-using grpc::Status;
 using grgrpc::GRData;
 using grgrpc::Empty;
 using grgrpc::GNURadioLink;
@@ -64,7 +60,7 @@ grpc_client_source::make ( size_t itemsize, char *address, char *code )
 /*
  * The private constructor
  */
-grpc_client_source_impl::grpc_client_source_impl ( size_t itemsize, char *address , char *code)
+grpc_client_source_impl::grpc_client_source_impl ( size_t itemsize, char *address , char *code )
   : gr::sync_block ( "grpc_client_source",
                      gr::io_signature::make ( 0, 0, 0 ),
                      gr::io_signature::make ( 1, 1, itemsize ) )
@@ -76,8 +72,9 @@ grpc_client_source_impl::grpc_client_source_impl ( size_t itemsize, char *addres
 
   client_reader_writer_ = stub_->RequestData ( new ClientContext() );
   StatusData init;
-  init.set_code(code_);
-  client_reader_writer_->Write(init);
+  init.set_code ( code_ );
+  client_reader_writer_->Write ( init );
+  items_produced_ = 0;
 }
 
 /*
@@ -96,17 +93,33 @@ grpc_client_source_impl::work ( int noutput_items,
 
   uint8_t *out = ( uint8_t * ) output_items[0];
   int i = 0;
+  tag_t d_tag;
 
   GRData reply;
-  
-  if ( client_reader_writer_->Read ( &reply ) ) {
-    
-      for (auto m_byte: reply.m_byte()) {
-        const char *test = m_byte.c_str();
-        memcpy ( ( void* ) (out + ( i * itemsize_ )), test, itemsize_ );  
-        i++;
-      }
-      
+
+
+  if ( client_reader_writer_->Read ( &reply ) )
+    {
+
+      for ( auto m_byte: reply.m_byte() )
+        {
+          const char *test = m_byte.c_str();
+          memcpy ( ( void* ) ( out + ( i * itemsize_ ) ), test, itemsize_ );
+          i++;
+        }
+      for ( auto mytag: reply.tag() )
+        {
+          d_tag.key = pmt::deserialize_str ( mytag.key() );
+          d_tag.value = pmt::deserialize_str ( mytag.value() );
+          d_tag.srcid = pmt::deserialize_str ( mytag.srcid() );
+          d_tag.offset = mytag.offset() + items_produced_;
+
+          //gr::block::add_item_tag(0, d_tag);
+          add_item_tag ( 0, d_tag );
+        }
+
+      items_produced_ += i;
+
       return i;
     }
   else
@@ -119,3 +132,4 @@ grpc_client_source_impl::work ( int noutput_items,
 } /* namespace grpc_blocks */
 } /* namespace gr */
 
+// kate: indent-mode cstyle; indent-width 2; replace-tabs on; 

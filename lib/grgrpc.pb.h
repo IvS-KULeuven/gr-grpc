@@ -49,6 +49,9 @@ extern ParametersDefaultTypeInternal _Parameters_default_instance_;
 class StatusData;
 class StatusDataDefaultTypeInternal;
 extern StatusDataDefaultTypeInternal _StatusData_default_instance_;
+class Tag;
+class TagDefaultTypeInternal;
+extern TagDefaultTypeInternal _Tag_default_instance_;
 }  // namespace grgrpc
 
 namespace grgrpc {
@@ -363,6 +366,18 @@ class GRData : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   const ::google::protobuf::RepeatedPtrField< ::std::string>& m_byte() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_m_byte();
 
+  // repeated .grgrpc.Tag tag = 4;
+  int tag_size() const;
+  void clear_tag();
+  static const int kTagFieldNumber = 4;
+  const ::grgrpc::Tag& tag(int index) const;
+  ::grgrpc::Tag* mutable_tag(int index);
+  ::grgrpc::Tag* add_tag();
+  ::google::protobuf::RepeatedPtrField< ::grgrpc::Tag >*
+      mutable_tag();
+  const ::google::protobuf::RepeatedPtrField< ::grgrpc::Tag >&
+      tag() const;
+
   // string code = 2;
   void clear_code();
   static const int kCodeFieldNumber = 2;
@@ -388,6 +403,7 @@ class GRData : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::RepeatedPtrField< ::std::string> m_byte_;
+  ::google::protobuf::RepeatedPtrField< ::grgrpc::Tag > tag_;
   ::google::protobuf::internal::ArenaStringPtr code_;
   int type_;
   mutable int _cached_size_;
@@ -656,6 +672,134 @@ class Parameters : public ::google::protobuf::Message /* @@protoc_insertion_poin
   mutable int _cached_size_;
   friend struct  protobuf_grgrpc_2eproto::TableStruct;
 };
+// -------------------------------------------------------------------
+
+class Tag : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:grgrpc.Tag) */ {
+ public:
+  Tag();
+  virtual ~Tag();
+
+  Tag(const Tag& from);
+
+  inline Tag& operator=(const Tag& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const Tag& default_instance();
+
+  static inline const Tag* internal_default_instance() {
+    return reinterpret_cast<const Tag*>(
+               &_Tag_default_instance_);
+  }
+
+  void Swap(Tag* other);
+
+  // implements Message ----------------------------------------------
+
+  inline Tag* New() const PROTOBUF_FINAL { return New(NULL); }
+
+  Tag* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  void CopyFrom(const Tag& from);
+  void MergeFrom(const Tag& from);
+  void Clear() PROTOBUF_FINAL;
+  bool IsInitialized() const PROTOBUF_FINAL;
+
+  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
+      const PROTOBUF_FINAL {
+    return InternalSerializeWithCachedSizesToArray(
+        ::google::protobuf::io::CodedOutputStream::IsDefaultSerializationDeterministic(), output);
+  }
+  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void InternalSwap(Tag* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // string key = 2;
+  void clear_key();
+  static const int kKeyFieldNumber = 2;
+  const ::std::string& key() const;
+  void set_key(const ::std::string& value);
+  #if LANG_CXX11
+  void set_key(::std::string&& value);
+  #endif
+  void set_key(const char* value);
+  void set_key(const char* value, size_t size);
+  ::std::string* mutable_key();
+  ::std::string* release_key();
+  void set_allocated_key(::std::string* key);
+
+  // string value = 3;
+  void clear_value();
+  static const int kValueFieldNumber = 3;
+  const ::std::string& value() const;
+  void set_value(const ::std::string& value);
+  #if LANG_CXX11
+  void set_value(::std::string&& value);
+  #endif
+  void set_value(const char* value);
+  void set_value(const char* value, size_t size);
+  ::std::string* mutable_value();
+  ::std::string* release_value();
+  void set_allocated_value(::std::string* value);
+
+  // string srcid = 4;
+  void clear_srcid();
+  static const int kSrcidFieldNumber = 4;
+  const ::std::string& srcid() const;
+  void set_srcid(const ::std::string& value);
+  #if LANG_CXX11
+  void set_srcid(::std::string&& value);
+  #endif
+  void set_srcid(const char* value);
+  void set_srcid(const char* value, size_t size);
+  ::std::string* mutable_srcid();
+  ::std::string* release_srcid();
+  void set_allocated_srcid(::std::string* srcid);
+
+  // uint64 offset = 1;
+  void clear_offset();
+  static const int kOffsetFieldNumber = 1;
+  ::google::protobuf::uint64 offset() const;
+  void set_offset(::google::protobuf::uint64 value);
+
+  // @@protoc_insertion_point(class_scope:grgrpc.Tag)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::ArenaStringPtr key_;
+  ::google::protobuf::internal::ArenaStringPtr value_;
+  ::google::protobuf::internal::ArenaStringPtr srcid_;
+  ::google::protobuf::uint64 offset_;
+  mutable int _cached_size_;
+  friend struct  protobuf_grgrpc_2eproto::TableStruct;
+};
 // ===================================================================
 
 
@@ -845,6 +989,36 @@ inline void GRData::set_type(::grgrpc::GRData_Type value) {
   // @@protoc_insertion_point(field_set:grgrpc.GRData.type)
 }
 
+// repeated .grgrpc.Tag tag = 4;
+inline int GRData::tag_size() const {
+  return tag_.size();
+}
+inline void GRData::clear_tag() {
+  tag_.Clear();
+}
+inline const ::grgrpc::Tag& GRData::tag(int index) const {
+  // @@protoc_insertion_point(field_get:grgrpc.GRData.tag)
+  return tag_.Get(index);
+}
+inline ::grgrpc::Tag* GRData::mutable_tag(int index) {
+  // @@protoc_insertion_point(field_mutable:grgrpc.GRData.tag)
+  return tag_.Mutable(index);
+}
+inline ::grgrpc::Tag* GRData::add_tag() {
+  // @@protoc_insertion_point(field_add:grgrpc.GRData.tag)
+  return tag_.Add();
+}
+inline ::google::protobuf::RepeatedPtrField< ::grgrpc::Tag >*
+GRData::mutable_tag() {
+  // @@protoc_insertion_point(field_mutable_list:grgrpc.GRData.tag)
+  return &tag_;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::grgrpc::Tag >&
+GRData::tag() const {
+  // @@protoc_insertion_point(field_list:grgrpc.GRData.tag)
+  return tag_;
+}
+
 // -------------------------------------------------------------------
 
 // Bool
@@ -927,7 +1101,183 @@ inline void Parameters::set_sample_rate(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:grgrpc.Parameters.sample_rate)
 }
 
+// -------------------------------------------------------------------
+
+// Tag
+
+// uint64 offset = 1;
+inline void Tag::clear_offset() {
+  offset_ = GOOGLE_ULONGLONG(0);
+}
+inline ::google::protobuf::uint64 Tag::offset() const {
+  // @@protoc_insertion_point(field_get:grgrpc.Tag.offset)
+  return offset_;
+}
+inline void Tag::set_offset(::google::protobuf::uint64 value) {
+  
+  offset_ = value;
+  // @@protoc_insertion_point(field_set:grgrpc.Tag.offset)
+}
+
+// string key = 2;
+inline void Tag::clear_key() {
+  key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Tag::key() const {
+  // @@protoc_insertion_point(field_get:grgrpc.Tag.key)
+  return key_.GetNoArena();
+}
+inline void Tag::set_key(const ::std::string& value) {
+  
+  key_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:grgrpc.Tag.key)
+}
+#if LANG_CXX11
+inline void Tag::set_key(::std::string&& value) {
+  
+  key_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:grgrpc.Tag.key)
+}
+#endif
+inline void Tag::set_key(const char* value) {
+  
+  key_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:grgrpc.Tag.key)
+}
+inline void Tag::set_key(const char* value, size_t size) {
+  
+  key_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:grgrpc.Tag.key)
+}
+inline ::std::string* Tag::mutable_key() {
+  
+  // @@protoc_insertion_point(field_mutable:grgrpc.Tag.key)
+  return key_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Tag::release_key() {
+  // @@protoc_insertion_point(field_release:grgrpc.Tag.key)
+  
+  return key_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Tag::set_allocated_key(::std::string* key) {
+  if (key != NULL) {
+    
+  } else {
+    
+  }
+  key_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), key);
+  // @@protoc_insertion_point(field_set_allocated:grgrpc.Tag.key)
+}
+
+// string value = 3;
+inline void Tag::clear_value() {
+  value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Tag::value() const {
+  // @@protoc_insertion_point(field_get:grgrpc.Tag.value)
+  return value_.GetNoArena();
+}
+inline void Tag::set_value(const ::std::string& value) {
+  
+  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:grgrpc.Tag.value)
+}
+#if LANG_CXX11
+inline void Tag::set_value(::std::string&& value) {
+  
+  value_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:grgrpc.Tag.value)
+}
+#endif
+inline void Tag::set_value(const char* value) {
+  
+  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:grgrpc.Tag.value)
+}
+inline void Tag::set_value(const char* value, size_t size) {
+  
+  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:grgrpc.Tag.value)
+}
+inline ::std::string* Tag::mutable_value() {
+  
+  // @@protoc_insertion_point(field_mutable:grgrpc.Tag.value)
+  return value_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Tag::release_value() {
+  // @@protoc_insertion_point(field_release:grgrpc.Tag.value)
+  
+  return value_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Tag::set_allocated_value(::std::string* value) {
+  if (value != NULL) {
+    
+  } else {
+    
+  }
+  value_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set_allocated:grgrpc.Tag.value)
+}
+
+// string srcid = 4;
+inline void Tag::clear_srcid() {
+  srcid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Tag::srcid() const {
+  // @@protoc_insertion_point(field_get:grgrpc.Tag.srcid)
+  return srcid_.GetNoArena();
+}
+inline void Tag::set_srcid(const ::std::string& value) {
+  
+  srcid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:grgrpc.Tag.srcid)
+}
+#if LANG_CXX11
+inline void Tag::set_srcid(::std::string&& value) {
+  
+  srcid_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:grgrpc.Tag.srcid)
+}
+#endif
+inline void Tag::set_srcid(const char* value) {
+  
+  srcid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:grgrpc.Tag.srcid)
+}
+inline void Tag::set_srcid(const char* value, size_t size) {
+  
+  srcid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:grgrpc.Tag.srcid)
+}
+inline ::std::string* Tag::mutable_srcid() {
+  
+  // @@protoc_insertion_point(field_mutable:grgrpc.Tag.srcid)
+  return srcid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Tag::release_srcid() {
+  // @@protoc_insertion_point(field_release:grgrpc.Tag.srcid)
+  
+  return srcid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Tag::set_allocated_srcid(::std::string* srcid) {
+  if (srcid != NULL) {
+    
+  } else {
+    
+  }
+  srcid_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), srcid);
+  // @@protoc_insertion_point(field_set_allocated:grgrpc.Tag.srcid)
+}
+
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

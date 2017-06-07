@@ -23,6 +23,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(gr-grpc_blocks CXX C)
 enable_testing()
+set (CMAKE_CXX_STANDARD 11)
 
 #install to PyBOMBS target prefix if defined
 if(DEFINED ENV{PYBOMBS_PREFIX})
