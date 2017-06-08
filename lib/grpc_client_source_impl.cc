@@ -68,7 +68,7 @@ grpc_client_source_impl::grpc_client_source_impl ( size_t itemsize, char *addres
 {
   itemsize_ = itemsize;
   code_ = code;
-  stub_ = GNURadioLink::NewStub ( grpc::CreateChannel ( "localhost:50051", grpc::InsecureChannelCredentials() ) );
+  stub_ = GNURadioLink::NewStub ( grpc::CreateChannel ( address, grpc::InsecureChannelCredentials() ) );
 
   client_reader_writer_ = stub_->RequestData ( new ClientContext() );
   StatusData init;
